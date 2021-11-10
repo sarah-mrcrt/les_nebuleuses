@@ -1,0 +1,32 @@
+/*************** Général ***************/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    /* toute la largeur/hauteur de la zone d'affichage*/
+    width: 100%;
+    min-height: 100%;
+    /* aucune marge */
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*************** Header ***************/
+header {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
