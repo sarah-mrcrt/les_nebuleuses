@@ -12,8 +12,7 @@
 		<meta name="description" content="blablabla performance/théâtre">
 		<!-- Icônes -->
 		<!-- Stylesheets -->
-		<!-- <link rel="stylesheet" type="text/css" href="./css/main.css" /> -->
-		<!-- Typographies -->
+		<link rel="stylesheet" type="text/css" href="./css/import.css" />
 	</head>
 
 	<body>
@@ -50,29 +49,37 @@
                 <a>réserver <img src="ressources/images/ticket.png" alt="ticket"></a>
             </section>  -->
 
-			<!-- <section id="agenda">
+			<section id="agenda">
 				<h1>Agenda</h1>
 
-                <article></article>
-                <span>traits</span>
-
+				<hr>
 				<article>
-					<div>
-						<p><strong>Samedi 02 octobre 2021</strong> 22h > 00h</p>
-						<p>de 5 à 15€</p>
+					<div class="picture">
+						<div>
+							<span>Théâtre</span>
+							<img alt="polygone" alt="polygone">
+						</div>
+						<img alt=".png">
 					</div>
 
-					<p>
-						Contes et Légendes
+					<p class="date_tarif">
+						<strong>Samedi 02 octobre 2021</strong> 
+						<span>22h > 00h</span>
+						<p>de 5 à 15€</p>
+					</p>
+
+					<p class="infos_performance"> 
+						<span>Contes et Légendes</span>
 						<strong>Joël Pommerat</strong>
 					</p>
 
-					<div>
-						<a href="#">réserver</a>
-						<a href="#">en savoir +</a>
+					<div class="boutons">
+						<a href="#" class="btn ticket">réserver</a>
+						<a href="#" class="btn more">en savoir +</a>
 					</div>
 				</article>
-			</section> -->
+				<hr>
+			</section>
 
 			<section id="infos_pratiques">
 				<!-- images + hover ? -->
@@ -107,19 +114,19 @@
 		</main>
 
 		<footer id="contact">
-			<!-- ok -->
+			<!-- adresse ou div ? -->
 			<h1>Contact</h1>
 
-			<address>
+			<article>
 				<div>
 					<h4>mail</h4>
 					<a href="mailto:contact@lanebuleuse.com">contact@lanebuleuse.com</a>
 				</div>
 
-				<div>
+				<address>
 					<h4>adresse</h4>
 					<a href="#">Avenue Michel Rondet, <br>59135 Wallers</a>
-				</div>
+				</address>
 
 				<div>
 					<h4>suivez-nous</h4>
@@ -129,9 +136,9 @@
 						<li><a href="#"><i>tw</i></a></li>
 					</ul>
 				</div>
-			</address>
+			</article>
 
-			<div>
+			<article>
 				<ul>
 					<li><a href="#">Politique de confidentialité</a></li>
 					<li><a href="#">Mentions Légales</a></li>
@@ -139,7 +146,7 @@
 					<li><small>© 2021 Nébuleuse | Tous droits réservés</small></li>
 				</ul>
 				<img src="ressources/images/logo_icon.png" alt="logo_icon">
-			</div>
+			</article>
 			<!-- -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%); -->
 		</footer>
 

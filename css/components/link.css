@@ -1,0 +1,7 @@
+a {
+    color: var(--gris);
+}
+
+a:hover{
+    color: var(--orange);
+}
