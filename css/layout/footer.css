@@ -19,10 +19,16 @@ footer {
 	left: 0;
 }
 
+/*************** Titre ***************/
 footer h1 {
-	color: var(--blanc)
+	color: var(--blanc);
 }
 
+h1::before, h1::after {
+	filter: invert(1);
+}
+
+/*************** Article ***************/
 footer article {
 	position: relative;
 	display: flex;
@@ -30,7 +36,7 @@ footer article {
 	justify-content: center;
 }
 
-/*************** Informations de contact  ***************/
+/*** Informations de contact ***/
 footer article:nth-child(2n) {	
 	/* width: 80%;	 */
 	align-items: flex-start;
@@ -44,7 +50,7 @@ footer article .social_medias ul {
 	justify-content: space-around;
 }
 
-/*************** Mentions d'informations  ***************/
+/*** Mentions d'informations ***/
 footer article:nth-child(3n) ul {
 	display: flex;
 	justify-content: space-around;
@@ -59,7 +65,7 @@ footer article:nth-child(3n) ul li a {
 	color: var(--gris);
 }
 
-footer  img {
+footer img {
 	position: absolute;
 	z-index: -1;
 	right: 0;
