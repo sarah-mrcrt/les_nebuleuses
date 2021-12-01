@@ -9,14 +9,15 @@
 @import url(./components/title.css);
 @import url(./components/link.css);
 @import url(./components/button.css);
+/* Sections */
+@import url(./sections/1accueil.css);
+@import url(./sections/2agenda.css);
+@import url(./sections/3infos_pratiques.css);
+@import url(./sections/4performances.css);
 /* Layout */
 @import url(./layout/body.css);
 @import url(./layout/header.css);
 @import url(./layout/aside.css);
 @import url(./layout/main.css);
 @import url(./layout/footer.css);
-/* Sections */
-@import url(./sections/1accueil.css);
-@import url(./sections/2agenda.css);
-@import url(./sections/3infos_pratiques.css);
-@import url(./sections/4performances.css);
+@import url(./layout/responsive.css);

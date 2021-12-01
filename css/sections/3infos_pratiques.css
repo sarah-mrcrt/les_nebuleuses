@@ -1,27 +1,92 @@
 
-img {
-  object-fit : cover;
+#infos_pratiques {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
+
 #infos_pratiques .grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
-  background-color: red;
+	width: 70%;
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, .5fr);
+	grid-gap: 1rem; /*marges entre lignes et colonnes */
+	grid-auto-flow: row dense;
+	/* justify-content: center; */
+	/* align-content: center; */
+	/* justify-items: stretch;
+	align-items: stretch; */
+	grid-template-areas:
+		"restauration covid ."
+		"restauration billetterie ."
+		"transport transport .";
 }
 
-#infos_pratiques > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  /* padding: 20px 0; */
-  /* auto-fit:  */
+#restauration { grid-area: restauration; }
+#covid { grid-area: covid; }
+#transport { grid-area: transport; }
+#billetterie { grid-area: billetterie; }
+
+#infos_pratiques article {
+	position: relative;
+	overflow: hidden;
 }
 
-#infos_pratiques article img {
-    position: relative;
-    max-width: 20rem;
+#infos_pratiques .grid article img {
+	position: relative;
+	transition: transform .5s ease-in-out;
+	/* Adapter les images aux grilles */
+	min-width: 100%;
+	min-height: 100%;
+	display: block;
+	object-fit: cover
 }
 
-#infos_pratiques article h3 {
-    position: absolute;
+#infos_pratiques .grid article h3 {
+	position: absolute;
+	bottom: 0;
+	padding: 2rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+	font-size: 2rem;
+	color: var(--blanc);
+}
+
+/* Overlay */
+#infos_pratiques .grid article .overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #0000007a;
+
+}
+
+/* #infos_pratiques .grid article #restauration.overlay {
+background-color: #ff87077a;
+}
+#infos_pratiques .grid article #covid.overlay {
+background-color: #ff07ea7a;
+}
+#infos_pratiques .grid article #billetterie.overlay {
+background-color: #ff07a07a;
+}
+#infos_pratiques .grid article #restauration.overlay {
+background-color: #eeff077a;
+} */
+
+#infos_pratiques article:hover .overlay {
+	opacity: 1;
+}
+
+#infos_pratiques article:hover img {
+	-ms-transform: scale(1.5); 
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
 }

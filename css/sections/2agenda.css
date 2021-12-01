@@ -1,22 +1,22 @@
 #agenda article{
-    display: flex;
+	display: flex;
 }
 
 #agenda article #picture, #agenda article #date_tarif,
 #agenda article #infos_performance {
-    display: block;
+	display: block;
 }
 
 
 #agenda .infos_performance strong  {
-    font-size: 2rem;
-    font-family: lilgroteskbold, Arial, sans-serif;
-     -webkit-text-stroke: 0.1rem;
-    -webkit-text-stroke-color: var(--noir);
-    color: #fff0;
-    margin: 0;
+	font-size: 2rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+	-webkit-text-stroke: 0.1rem;
+	-webkit-text-stroke-color: var(--noir);
+	color: #fff0;
+	margin: 0;
 }
 
 #agenda article .picture img{
-  height: 4rem;
+	height: 4rem;
 }

@@ -1,10 +1,16 @@
+p {
+    font-size: 1.5em;
+    /* font-size: 1.125rem; */
+}
+
 h1 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-family: lilgroteskbold, Arial, sans-serif;
     font-weight : bold;
     color: var(--noir);
     text-transform: uppercase;
     text-align: center;
+    padding: 4rem;
 }
 
 h1::before, h1::after {
@@ -12,3 +18,22 @@ h1::before, h1::after {
     margin: 10px;
     vertical-align: 50%;
 }
+
+h2 {
+    font-family: lilgroteskbold;
+}
+
+h4 {
+    font-family: monument;
+    font-size: 17px;
+}
+/* 
+h1 {
+ font-size: 5.9vw;
+}
+h2 {
+ font-size: 3.0vh;
+}
+p {
+ font-size: 2vmin;
+} */
