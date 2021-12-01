@@ -2,7 +2,7 @@ aside {
 	position: fixed;
 	padding: .5rem 1.5rem;
 	border-radius: 30rem;
-	z-index: 1;
+	z-index: 0;
 	text-align: center;
 	/* Rotation */
 	transform: rotate(90deg);

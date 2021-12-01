@@ -1,4 +1,5 @@
 
+/*************** Général  ***************/
 #infos_pratiques {
 	display: flex;
 	justify-content: center;
@@ -29,12 +30,14 @@
 #transport { grid-area: transport; }
 #billetterie { grid-area: billetterie; }
 
+/*************** Général  ***************/
 #infos_pratiques article {
 	position: relative;
 	overflow: hidden;
 }
 
 #infos_pratiques .grid article img {
+	/* Pour le survol */
 	position: relative;
 	transition: transform .5s ease-in-out;
 	/* Adapter les images aux grilles */
@@ -53,6 +56,7 @@
 	color: var(--blanc);
 }
 
+/*************** Survol : Overlay + Zoom  ***************/
 /* Overlay */
 #infos_pratiques .grid article .overlay {
 	position: absolute;
@@ -85,6 +89,7 @@ background-color: #eeff077a;
 	opacity: 1;
 }
 
+/* Zoom */
 #infos_pratiques article:hover img {
 	-ms-transform: scale(1.5); 
 	-webkit-transform: scale(1.5);

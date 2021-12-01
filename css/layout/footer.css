@@ -1,25 +1,68 @@
-/* footer {
-	background-color: var(--noir);
+/*************** Général ***************/
+footer {
 	color: var(--blanc);
 	text-align: center;
-	/* max-width: 100vw; */
-	/* height: 100vh; */
-
+	height: 70vh;
+	padding: 2rem 0;
+	/* Arrière plan coupé */
+	background-color: var(--noir);
+	clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+	/* Flex */
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	/* SideBar qui passe derrière le footer */
+	position: absolute;
+	z-index: 2;
+	right: 0;
+	left: 0;
 }
+
 footer h1 {
 	color: var(--blanc)
 }
+
 footer article {
+	position: relative;
 	display: flex;
-	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: blue;
 }
 
-footer article:first-child {
-	margin: 100px;
-	background-color: rebeccapurple;
+/*************** Informations de contact  ***************/
+footer article:nth-child(2n) {	
+	/* width: 80%;	 */
+	align-items: flex-start;
+	justify-content: space-around;
+	/* background-color: blue; */
+	padding: 5rem 0;
+}
+
+footer article .social_medias ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+/*************** Mentions d'informations  ***************/
+footer article:nth-child(3n) ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+footer article:nth-child(3n) ul li {
+	margin: 0 2rem;
+	text-transform: uppercase;
+}
+
+footer article:nth-child(3n) ul li a {
+	color: var(--gris);
+}
+
+footer  img {
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	bottom: -2rem;
+	width: 10%;
 }
