@@ -1,0 +1,27 @@
+
+img {
+  object-fit : cover;
+}
+#infos_pratiques .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: red;
+}
+
+#infos_pratiques > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /* padding: 20px 0; */
+  /* auto-fit:  */
+}
+
+#infos_pratiques article img {
+    position: relative;
+    max-width: 20rem;
+}
+
+#infos_pratiques article h3 {
+    position: absolute;
+}

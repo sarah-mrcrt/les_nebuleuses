@@ -13,7 +13,7 @@
     font-family: 'lilgroteskbold';
     src: url('../../ressources/fonts/lilgrotesk-bold-webfont.woff2') format('woff2'),
          url('../../ressources/fonts/lilgrotesk-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 
 }
