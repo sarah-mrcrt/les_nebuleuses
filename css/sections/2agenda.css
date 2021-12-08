@@ -1,14 +1,90 @@
-#agenda article{
-	display: flex;
+/*************** Général ***************/
+#agenda hr {
+	margin: 2.5rem 0;
 }
+/* #agenda article {
+	position: relative;
+	text-align: center;
+	display: flex;
+	justify-content: space-between; */
+	/* align-items: center; */
+	/* flex-wrap: wrap;
+	background: rebeccapurple;
+} */
 
-#agenda article #picture, #agenda article #date_tarif,
-#agenda article #infos_performance {
+#agenda > article {
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	/* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
+	grid-gap: 1rem;
+}
+	
+#agenda article >* >* {
 	display: block;
 }
 
+/*************** Image ***************/
+/* #agenda article .picture {
+	width: 10%;
+} */
 
-#agenda .infos_performance strong  {
+#agenda article .picture div {
+	position: absolute;
+	transform: rotate(-37deg);
+	width: 10%;
+}
+
+#agenda article .picture div img {
+	height: 50%;
+}
+
+#agenda article .picture div span {
+	color: var(--blanc);
+	font-family: lilgroteskbold, Arial, sans-serif;
+	/* Absolute */
+	position: absolute;
+	z-index: 1;
+	/* 50 % du parent référent */
+	top: 50%; 
+	left: 50%; 
+	/* décalage de 50% de sa propre taille */
+  	transform: translate(-50%, -50%); 
+}
+
+/*************** Dates & Tarifs ***************/
+#agenda article .infos_performance  {
+	background-color: grey;
+}
+
+#agenda article .date_tarif strong {
+	font-size: 2rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+}
+
+#agenda article .date_tarif span {
+	position: relative;
+}
+
+/* Soulignement */
+#agenda article .date_tarif span:first-of-type:before {
+   	content: '';
+    width: 32%;
+    position: absolute;
+	text-align: center;
+    left: 0%;
+    bottom: .1rem;
+    border-width: 0 0 1px;
+    border-style: solid;
+	margin: 0 auto;
+}
+
+/*************** Informations  ***************/
+#agenda article .date_tarif  {
+	background-color: lawngreen;
+}
+
+#agenda article .infos_performance span  {
 	font-size: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
@@ -17,6 +93,17 @@
 	margin: 0;
 }
 
-#agenda article .picture img{
-	height: 4rem;
+/*************** Boutons ***************/
+#agenda article .boutons  {
+	background-color: blue;
 }
+
+#agenda article .boutons  a {
+	margin: .5rem 0;
+}
+
+
+/* 
+balise svg ?
+typo en vw
+*/

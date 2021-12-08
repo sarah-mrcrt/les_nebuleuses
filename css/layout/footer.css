@@ -24,7 +24,7 @@ footer h1 {
 	color: var(--blanc);
 }
 
-h1::before, h1::after {
+footer h1::before, footer h1::after {
 	filter: invert(1);
 }
 

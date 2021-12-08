@@ -26,6 +26,9 @@
 	color: var(--noir);
 	border-color: var(--noir);
 }
+.btn.ticket:hover img {
+	filter: invert(1);
+}
 
 .btn.more:hover {
 	background-color: var(--blanc);
