@@ -21,7 +21,18 @@
     justify-content: center;
 }
 
-/*************** Image ***************/
+/*************** Calendrier ***************/
+#agenda #calendrier #mois {
+	justify-content: space-between;
+	display: flex;
+}
+
+#agenda #calendrier span {
+	transform: rotate(90deg);
+}
+
+/*************** Représentation ***************/
+/*** Image ***/
 /* Image générale */
 #agenda #representation article .picture img {
 	/* Adapter les images aux grilles */
@@ -51,7 +62,7 @@
   	transform: translate(-50%, -50%); 
 }
 
-/*************** Dates & Tarifs ***************/
+/*** Dates & Tarifs ***/ 
 #agenda #representation article .date_tarif span {
 	position: relative;
 	padding: 1rem;
@@ -71,7 +82,7 @@
 	margin: 0 auto;
 }
 
-/*************** Informations  ***************/
+/*** Informations ***/ 
 #agenda #representation article .infos_performance span  {
 	font-size: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
@@ -82,7 +93,7 @@
 	padding: 1rem;
 }
 
-/*************** Boutons ***************/
+/*** Boutons ***/ 
 #agenda #representation article .boutons  a {
 	margin: .5rem 0;
 }

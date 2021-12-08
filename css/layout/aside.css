@@ -5,10 +5,10 @@ aside {
 	z-index: 0;
 	text-align: center;
 	/* Rotation */
-	transform: rotate(90deg);
-	transform-origin: right top;
-	bottom: 0;
-	right: 1.5%;
+	transform: rotate(-90deg);
+	transform-origin: left bottom;
+	bottom: 10%;
+	right: -50%;
 	/* Glassmorphism */
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
@@ -26,6 +26,17 @@ aside ul {
 
 aside ul li  {
 	margin: .5rem 1.5rem;
+}
+
+aside ul li:nth-child(2n):before, aside ul li:nth-child(2n):after {
+    content: "";
+	background-image: url('../../ressources/images/outline_star.svg');
+	background-size: contain;
+    margin: 10px;
+    vertical-align: 50%;
+	width: 20%;
+	height: 20%;
+	display: inline-block;
 }
 
 aside ul li a {
