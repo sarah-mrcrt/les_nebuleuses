@@ -1,8 +1,13 @@
+/*************** Textes  ***************/
 p {
-    font-size: 1.5em;
-    /* font-size: 1.125rem; */
+    font-size: 1.125rem;
 }
 
+strong {
+	font-family: lilgroteskbold, Arial, sans-serif;
+}
+
+/*************** Titres  ***************/
 h1 {
     font-size: 7rem;
     font-family: lilgroteskbold, Arial, sans-serif;
@@ -23,10 +28,16 @@ h2 {
     font-family: lilgroteskbold;
 }
 
+h3 {
+    font-family: monument;
+    font-size: 29px;
+}
+
 h4 {
     font-family: monument;
     font-size: 17px;
 }
+
 /* 
 h1 {
  font-size: 5.9vw;
@@ -37,3 +48,4 @@ h2 {
 p {
  font-size: 2vmin;
 } */
+

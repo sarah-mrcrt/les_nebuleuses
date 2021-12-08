@@ -3,6 +3,7 @@ footer {
 	color: var(--blanc);
 	text-align: center;
 	height: 70vh;
+	width: 100vw;
 	padding: 2rem 0;
 	/* Arrière plan coupé */
 	background-color: var(--noir);
@@ -10,7 +11,7 @@ footer {
 	/* Flex */
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: flex-end;
 	/* SideBar qui passe derrière le footer */
 	position: absolute;
@@ -19,6 +20,9 @@ footer {
 	left: 0;
 }
 
+/* footer {
+	display: none;
+} */
 /*************** Titre ***************/
 footer h1 {
 	color: var(--blanc);
@@ -30,6 +34,7 @@ footer h1::before, footer h1::after {
 
 /*************** Article ***************/
 footer article {
+	text-align: center	;
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
@@ -48,12 +53,14 @@ footer article:nth-child(2n) {
 footer article .social_medias ul {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 /*** Mentions d'informations ***/
 footer article:nth-child(3n) ul {
 	display: flex;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 footer article:nth-child(3n) ul li {

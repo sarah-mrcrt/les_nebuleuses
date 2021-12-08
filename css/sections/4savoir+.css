@@ -1,1 +1,18 @@
 	/* clip-path: polygon(100% 0, 100% 23%, 0 43%, 0 20%); */
+#intro{
+    display: flex;
+}
+
+#intro .picture{ 
+    width: 50%;
+}
+
+.en_details{
+    display: flex;
+    flex: 40%;
+}
+
+#blabla p{
+    display: flex;
+    flex: 40%;
+}

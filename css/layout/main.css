@@ -1,5 +1,6 @@
 main {
-	margin: 6rem;
+	margin: 6rem; /* ça se fait ? */
+	/* background-color: blue; */
 }
 
 section {
@@ -7,4 +8,5 @@ section {
 	min-height: 100vh;
 	margin: 5rem 0 5rem 0;
 	padding: 5rem 0 5rem 0;
+	/* background-color: red; */
 }

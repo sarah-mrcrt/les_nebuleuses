@@ -1,45 +1,44 @@
 /*************** Général ***************/
 #agenda hr {
+	height: 0.1px;
 	margin: 2.5rem 0;
+	background-color: var(--gris_clair);
+	border: none;
 }
-/* #agenda article {
+#agenda #representation article {
+	text-align: center;
 	position: relative;
-	text-align: center;
-	display: flex;
-	justify-content: space-between; */
-	/* align-items: center; */
-	/* flex-wrap: wrap;
-	background: rebeccapurple;
-} */
-
-#agenda > article {
-	text-align: center;
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	/* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
-	grid-gap: 1rem;
+	grid-template-columns:  repeat(4,1fr);
+	grid-gap: 4rem;
 }
-	
-#agenda article >* >* {
-	display: block;
+
+#agenda #representation article >*  {
+	/* background-color: lawngreen; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*************** Image ***************/
-/* #agenda article .picture {
-	width: 10%;
-} */
+/* Image générale */
+#agenda #representation article .picture img {
+	/* Adapter les images aux grilles */
+	min-width: 100%;
+	min-height: 100%;
+}
 
-#agenda article .picture div {
+/* Type de la performance dans un polygone */
+#agenda #representation article .picture div {
 	position: absolute;
 	transform: rotate(-37deg);
-	width: 10%;
+	width: 8%;
+	left: -3%;
+    top: -25%;
 }
 
-#agenda article .picture div img {
-	height: 50%;
-}
-
-#agenda article .picture div span {
+#agenda #representation article .picture div span {
 	color: var(--blanc);
 	font-family: lilgroteskbold, Arial, sans-serif;
 	/* Absolute */
@@ -53,57 +52,37 @@
 }
 
 /*************** Dates & Tarifs ***************/
-#agenda article .infos_performance  {
-	background-color: grey;
-}
-
-#agenda article .date_tarif strong {
-	font-size: 2rem;
-	font-family: lilgroteskbold, Arial, sans-serif;
-}
-
-#agenda article .date_tarif span {
+#agenda #representation article .date_tarif span {
 	position: relative;
+	padding: 1rem;
 }
 
-/* Soulignement */
-#agenda article .date_tarif span:first-of-type:before {
+#agenda #representation article .date_tarif span:first-of-type:before {
+	/* Soulignement */
    	content: '';
-    width: 32%;
+    width: 45%;
     position: absolute;
 	text-align: center;
     left: 0%;
-    bottom: .1rem;
-    border-width: 0 0 1px;
+	right: 0;
+    bottom: -.1rem;
+    border-width: 0 0 .1px;
     border-style: solid;
 	margin: 0 auto;
 }
 
 /*************** Informations  ***************/
-#agenda article .date_tarif  {
-	background-color: lawngreen;
-}
-
-#agenda article .infos_performance span  {
+#agenda #representation article .infos_performance span  {
 	font-size: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
 	-webkit-text-stroke-color: var(--noir);
 	color: #fff0;
 	margin: 0;
+	padding: 1rem;
 }
 
 /*************** Boutons ***************/
-#agenda article .boutons  {
-	background-color: blue;
-}
-
-#agenda article .boutons  a {
+#agenda #representation article .boutons  a {
 	margin: .5rem 0;
 }
-
-
-/* 
-balise svg ?
-typo en vw
-*/

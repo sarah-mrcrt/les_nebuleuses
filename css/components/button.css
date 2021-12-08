@@ -3,9 +3,11 @@
 	font-family: monument, sans-serif;
 	text-transform: lowercase;
 	text-align: center;
+	display: inline-block;
 	padding: .5rem 1.5rem;
 	border: 0.2rem solid;
 	border-radius: 30rem;
+	width: 10rem;
 }
 
 .btn.ticket {

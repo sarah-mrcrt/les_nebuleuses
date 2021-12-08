@@ -1,4 +1,5 @@
 
+/* +, image train */
 /*************** Général  ***************/
 #infos_pratiques {
 	display: flex;
@@ -15,10 +16,6 @@
 	grid-template-rows: repeat(3, .5fr);
 	grid-gap: 1rem; /*marges entre lignes et colonnes */
 	grid-auto-flow: row dense;
-	/* justify-content: center; */
-	/* align-content: center; */
-	/* justify-items: stretch;
-	align-items: stretch; */
 	grid-template-areas:
 		"restauration covid ."
 		"restauration billetterie ."
@@ -43,12 +40,11 @@
 	/* Adapter les images aux grilles */
 	min-width: 100%;
 	min-height: 100%;
-	display: block;
-	object-fit: cover
 }
 
 #infos_pratiques .grid article h3 {
 	position: absolute;
+	z-index: 1;
 	bottom: 0;
 	padding: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
@@ -59,7 +55,13 @@
 /*************** Survol : Overlay + Zoom  ***************/
 /* Overlay */
 #infos_pratiques .grid article .overlay {
+	/* Flex */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* Absolute */
 	position: absolute;
+	z-index: 0;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -68,22 +70,28 @@
 	width: 100%;
 	opacity: 0;
 	transition: .5s ease;
-	background-color: #0000007a;
-
+	/* background-color: #0000007a; */
 }
 
-/* #infos_pratiques .grid article #restauration .overlay {
-background-color: #ff87077a;
+#infos_pratiques .grid article .overlay svg {
+	max-width: 20%;
+	max-height: 20%;
+	/* min-width: auto;
+    min-height: auto; */
 }
-#infos_pratiques .grid article #covid .overlay {
-background-color: #ff07ea7a;
+
+#infos_pratiques .grid article#restauration .overlay {
+	background-color: #efa3c89d;
 }
-#infos_pratiques .grid article #billetterie .overlay {
-background-color: #ff07a07a;
+#infos_pratiques .grid article#covid .overlay {
+	background-color: hsla(14, 82%, 55%, 0.706);
 }
-#infos_pratiques .grid article #restauration .overlay {
-background-color: #eeff077a;
-} */
+#infos_pratiques .grid article#billetterie .overlay {
+	background-color: #ea536c96;
+}
+#infos_pratiques .grid article#transport .overlay {
+	background-color: #d6ab2c9d;
+}
 
 #infos_pratiques article:hover .overlay {
 	opacity: 1;
