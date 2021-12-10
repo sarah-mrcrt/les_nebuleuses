@@ -29,14 +29,14 @@ aside ul li  {
 }
 
 aside ul li:nth-child(2n):before, aside ul li:nth-child(2n):after {
-    content:"";
+	content:"";
 	display: inline-block;
-    background-image: url('../../ressources/images/fill_star.svg');
-    background-size: 16px;
-    width: 16px; 
-    height: 16px;
-    background-repeat: no-repeat;
-    margin: -2px 16px;
+	background-image: url('../../ressources/images/fill_star.svg');
+	background-size: 16px;
+	width: 16px; 
+	height: 16px;
+	background-repeat: no-repeat;
+	margin: -2px 16px;
 }
 
 aside ul li a {

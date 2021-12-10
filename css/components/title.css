@@ -1,14 +1,14 @@
 /***************  Fonts réactive  ***************/
 p, a, h1, h2, h3, h4, h5, h6 {
-  /* "min" = valeur minimale; "val" = valeur préférée; "max" = valeur maximale  */
-  font-size: clamp(var(--min), var(--val), var(--max));
+	/* "min" = valeur minimale; "val" = valeur préférée; "max" = valeur maximale  */
+	font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 /*************** Textes ***************/
 p, a {
-    --min: 1rem;  
-    --val: 3.5vw; 
-    --max: 1.125rem;
+	--min: 1rem;  
+	--val: 3.5vw; 
+	--max: 1.125rem;
 }
 
 strong {
@@ -17,42 +17,42 @@ strong {
 
 /*************** Titres ***************/
 h1 {
-    /* Size */
-    --min: 2rem; 
-    --val: 10vw; 
-    --max: 7rem;
-    font-family: lilgroteskbold, Arial, sans-serif;
-    line-height: clamp(1rem, 4rem, 6rem);
-    font-weight : bold;
-    color: var(--noir);
-    text-transform: uppercase;
-    text-align: center;
-    padding: 4rem;
-    position: relative;
+	/* Size */
+	--min: 2rem; 
+	--val: 10vw; 
+	--max: 7rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+	line-height: clamp(1rem, 4rem, 6rem);
+	font-weight : bold;
+	color: var(--noir);
+	text-transform: uppercase;
+	text-align: center;
+	padding: 4rem;
+	position: relative;
 }
 
 h1::before, h1::after {
-    content:"";
-    background-image: url('../../ressources/images/outline_star.svg');
-    background-size: 60px;
-    width: 60px;
-    height: 60px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    vertical-align: 25%;
-    margin: 0 30px;
+	content:"";
+	background-image: url('../../ressources/images/outline_star.svg');
+	background-size: 60px;
+	width: 60px;
+	height: 60px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: 25%;
+	margin: 0 30px;
 }
 
 h2 {
-    font-family: lilgroteskbold;
+	font-family: lilgroteskbold;
 }
 
 h3 {
-    font-family: monument;
-    font-size: 29px;
+	font-family: monument;
+	font-size: 29px;
 }
 
 h4 {
-    font-family: monument;
-    font-size: 17px;
+	font-family: monument;
+	font-size: 17px;
 }
