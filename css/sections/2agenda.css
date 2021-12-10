@@ -23,12 +23,32 @@
 
 /*************** Calendrier ***************/
 #agenda #calendrier #mois {
+	padding: 3rem;
 	justify-content: space-between;
 	display: flex;
 }
 
-#agenda #calendrier span {
-	transform: rotate(90deg);
+#agenda #calendrier #mois p {
+	position: relative;
+}
+
+#agenda #calendrier #mois > p {
+	font-size: 8rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+    -webkit-text-stroke: 0.2rem;
+    -webkit-text-stroke-color: var(--noir);
+	color: transparent;
+}
+
+#agenda #calendrier #mois span {
+	font-size: initial;
+	font-family: initial;
+	-webkit-text-stroke: initial;
+	color: var(--noir);
+	position: absolute;
+	right: 0%;
+    bottom: 60%;
+	transform: rotate(-90deg);
 }
 
 /*************** Représentation ***************/
