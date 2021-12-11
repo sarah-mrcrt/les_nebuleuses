@@ -23,8 +23,9 @@
 }
 
 /*************** Calendrier ***************/
+/* Mois */
 #agenda #calendrier #mois {
-	padding: 3rem;
+	padding: 2rem 3rem;
 	justify-content: space-between;
 	display: flex;
 }
@@ -36,14 +37,14 @@
 #agenda #calendrier #mois > p {
 	font-size: 8rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
-	-webkit-text-stroke: 0.2rem;
+	-webkit-text-stroke: 0.1rem;
 	-webkit-text-stroke-color: var(--noir);
 	color: transparent;
 }
 
 #agenda #calendrier #mois span {
-	font-size: initial;
-	font-family: initial;
+	font-size: clamp(1rem, 3.5vw, 1.125rem);
+	font-family: lilgrotesk;
 	-webkit-text-stroke: initial;
 	color: var(--noir);
 	position: absolute;
@@ -51,6 +52,29 @@
 	bottom: 60%;
 	transform: rotate(-90deg);
 }
+
+/* Flèches */
+#agenda #calendrier .arrows {
+	padding: 3rem 4.5rem;
+	font-family: monument;
+	display: flex;
+	justify-content: space-between;
+}
+
+#agenda #calendrier .arrows div {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.arrows svg {
+	width: 30%;
+}
+
+.left_arrow svg{
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
+
 
 /*************** Représentation ***************/
 /*** Image ***/

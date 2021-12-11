@@ -1,1 +1,37 @@
-/* ticket en svg ? */
+/* Arrière plan coupé */
+#accueil {
+	position: relative;
+	background-color: var(--gris_fonce);
+
+	background: greenyellow;
+}
+#accueil #clip{
+	clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
+	background: greenyellow;
+}
+
+#accueil #bandeaux img{
+	position: absolute;
+	background: hotpink;
+}
+#accueil #bandeaux img:first-child{
+	transform: rotate(337deg)
+}
+
+#accueil #news {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	bottom: 39%;
+	left: 55%;
+}
+
+#accueil #news h3{
+	font-family: lilgrotesk;
+}
+
+#accueil #news p {
+	font-family: monument;
+	display: contents;
+}
