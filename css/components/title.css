@@ -29,6 +29,7 @@ h1 {
 	text-align: center;
 	padding: 4rem;
 	position: relative;
+	background-color: brown;
 }
 
 h1::before, h1::after {
