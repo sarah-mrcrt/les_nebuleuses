@@ -1,0 +1,122 @@
+/* Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
+
+/* 320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV */
+
+/* taille d'écran donnée ou moins = max-width */
+
+/* Dispositifs très petits (téléphones, 630px et moins) */
+@media only screen and (max-width : 630px)  {
+
+}
+
+/* Périphériques de taille moyenne (tablettes en mode paysage, 768px et plus) */
+@media only screen and (max-width : 768px) {
+	header, aside {
+		display: none;
+	}
+	/*************** Titres  ***************/
+	h1 {
+		padding: 2rem 0;
+	}
+	/*************** Accueil  ***************/
+	/*************** Agenda  ***************/
+	#agenda #calendrier {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	#agenda #calendrier #mois, #agenda #calendrier .arrows {
+		padding: 1rem 0;
+	}
+	#agenda #representation article {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	#agenda #representation article .date_tarif{
+		display: none;
+	}
+
+	#agenda #representation article .picture div {
+		left: -13%;}
+
+	/*************** Informations pratiques  ***************/
+	#infos_pratiques .grid  {
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: repeat(4, 50vw);
+		grid-template-areas:
+			"restauration."
+			"covid."
+			"billetterie."
+			"transport.";
+	}
+
+	/*************** Footer  ***************/
+	footer {
+		height: 100vh;
+		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+		justify-content: space-around;
+	}
+	/* Titre */
+	footer h1 {
+		padding: 0;
+	}
+	/*Article */
+
+	footer img {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+		bottom: 0;
+		width: 23%;
+	} 
+
+	footer article:nth-child(2n), footer article:nth-child(3n) ul{
+		align-items: center;
+		flex-direction: column;
+	}
+
+	footer article:nth-child(2n) {
+		padding: 1.5rem 0;
+	}
+
+	footer img {
+		display: none;
+	}
+}
+
+/* Gros appareils (ordinateurs portables/de bureau, 992px et plus) */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+	body {
+		background-color: blue;
+	}
+	/*************** Informations pratiques  ***************/
+	#infos_pratiques .grid {
+		width: 0;}
+	/*************** Footer  ***************/
+	footer {
+		height: 80vh;
+	}
+
+	footer h1 {
+		padding: 1rem;
+	}
+}
+
+/* Périphériques extra-larges (ordinateurs portables et de bureau de grande taille, 1200px et plus) */
+@media only screen and (min-width : 1200px) {
+	body {
+		background-color: red;
+	}
+}
+
+/* --xs:420px;
+--sm:630px;
+--md:768px;
+--lg:992px;
+--xl:1200px; */

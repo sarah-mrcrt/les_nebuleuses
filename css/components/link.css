@@ -1,5 +1,6 @@
 a {
 	color: var(--blanc);
+	transition: all 0.5s ease;
 }
 
 a:hover{

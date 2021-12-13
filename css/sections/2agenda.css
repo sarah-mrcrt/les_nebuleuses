@@ -11,11 +11,10 @@
 	position: relative;
 	display: grid;
 	grid-template-columns:  repeat(4,1fr);
-	grid-gap: 4rem;
+	grid-gap: 4vw;
 }
 
 #agenda #representation article >*  {
-	/* background-color: lawngreen; */
 	display: flex;
 	align-items: center;
 	flex-direction: column;
@@ -35,22 +34,30 @@
 }
 
 #agenda #calendrier #mois > p {
-	font-size: 8rem;
+	font-size: clamp(2rem, 8vw, 10rem);
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
-	-webkit-text-stroke-color: var(--noir);
+	-webkit-text-stroke-color: var(--gris_clair);
 	color: transparent;
 }
 
-#agenda #calendrier #mois span {
+#agenda #calendrier #mois > p.active {
+	-webkit-text-stroke-color: var(--noir);
+}
+
+#agenda #calendrier #mois p span {
 	font-size: clamp(1rem, 3.5vw, 1.125rem);
 	font-family: lilgrotesk;
 	-webkit-text-stroke: initial;
-	color: var(--noir);
+	color: var(--gris_clair);
 	position: absolute;
 	right: 0%;
 	bottom: 60%;
 	transform: rotate(-90deg);
+}
+
+#agenda #calendrier #mois p.active span {
+	color: var(--noir);
 }
 
 /* Flèches */
@@ -59,6 +66,7 @@
 	font-family: monument;
 	display: flex;
 	justify-content: space-between;
+	text-align: center;
 }
 
 #agenda #calendrier .arrows div {
@@ -89,9 +97,9 @@
 #agenda #representation article .picture div {
 	position: absolute;
 	transform: rotate(-37deg);
-	width: 8%;
+	width: 6.5rem;
 	left: -3%;
-	top: -25%;
+	    top: -3vw;
 }
 
 #agenda #representation article .picture div span {
@@ -119,7 +127,7 @@
 	width: 45%;
 	position: absolute;
 	text-align: center;
-	left: 0%;
+	left: 0;
 	right: 0;
 	bottom: -.1rem;
 	border-width: 0 0 .1px;
@@ -133,7 +141,7 @@
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
 	-webkit-text-stroke-color: var(--noir);
-	color: #fff0;
+	color: transparent;
 	margin: 0;
 	padding: 1rem;
 }

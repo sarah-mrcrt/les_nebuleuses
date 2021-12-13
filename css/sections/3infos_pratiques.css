@@ -1,5 +1,5 @@
 
-/* +, image train */
+/* + */
 /*************** Général  ***************/
 #infos_pratiques {
 	display: flex;
@@ -27,19 +27,21 @@
 #transport { grid-area: transport; }
 #billetterie { grid-area: billetterie; }
 
-/*************** Général  ***************/
+/*************** Cards infos pratiques  ***************/
 #infos_pratiques article {
 	position: relative;
 	overflow: hidden;
 }
 
 #infos_pratiques .grid article img {
-	/* Pour le survol */
 	position: relative;
 	transition: transform .5s ease-in-out;
 	/* Adapter les images aux grilles */
 	min-width: 100%;
 	min-height: 100%;
+	/* Images centré dans les grilles */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
 }
 
 #infos_pratiques .grid article h3 {
@@ -72,6 +74,7 @@
 	transition: .5s ease;
 	/* background-color: #0000007a; */
 }
+
 
 #infos_pratiques .grid article .overlay svg {
 	max-width: 20%;

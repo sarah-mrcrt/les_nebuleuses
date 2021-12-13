@@ -8,6 +8,7 @@
 	border: 0.2rem solid;
 	border-radius: 30rem;
 	width: 10rem;
+	transition: all 0.5s ease;
 }
 
 .btn.ticket {
@@ -15,6 +16,7 @@
 	color: var(--blanc);
 	border-color: var(--noir);
 }
+
 .btn.more {
 	background-color: var(--orange);
 	color: var(--noir);
@@ -22,12 +24,12 @@
 }
 
 /* Hover */
-/* btn image en svg ? ou before */
 .btn.ticket:hover {
 	background-color: var(--blanc);
 	color: var(--noir);
 	border-color: var(--noir);
 }
+
 .btn.ticket:hover img {
 	filter: invert(1);
 }

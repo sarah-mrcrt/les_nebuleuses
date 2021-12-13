@@ -1,37 +1,46 @@
 /* Arrière plan coupé */
+/*************** Général  ***************/
 #accueil {
 	position: relative;
+	text-align: center;
 	background-color: var(--gris_fonce);
-
-	background: greenyellow;
+	display: flex;
+	align-items: center;
 }
 #accueil #clip{
 	clip-path: polygon(0 0, 100% 0%, 100% 75%, 0 100%);
-	background: greenyellow;
+	/* background: greenyellow; */
 }
 
+/*************** Bandeaux  ***************/
 #accueil #bandeaux img{
 	position: absolute;
-	background: hotpink;
+	z-index: 0;
 }
+
 #accueil #bandeaux img:first-child{
-	transform: rotate(337deg)
+	transform: rotate(7deg);
+	top: 30%;
 }
 
-#accueil #news {
+/*************** Actualité  ***************/
+#accueil article {
+	z-index: 1;
 	display: flex;
-	align-items: center;
-	flex-direction: column;
-	position: absolute;
-	bottom: 39%;
-	left: 55%;
-}
+	align-items: flex-end;
 
-#accueil #news h3{
+}
+#accueil article >* {
+	width: 50%;
+}
+#accueil article div {
+	align-items: flex-end;
+}
+#accueil article h3{
 	font-family: lilgrotesk;
 }
 
-#accueil #news p {
+#accueil article p {
 	font-family: monument;
-	display: contents;
-}
+	display: grid;
+} 

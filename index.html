@@ -4,7 +4,8 @@
 	<head>
 		<!-- Encodage -->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		<meta name="viewport" content="width=device-width, user-scalable=no">
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<!-- Référencement -->
 		<title>La nébuleuse</title>
@@ -13,12 +14,16 @@
 		<meta name="author" content="Emilie Perret & Sarah Mauriaucourt">
 		<!-- Icônes -->
 		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
-		<!-- Stylesheets -->
+		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/import.css" />
+		<!-- Javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="./js/index.js"></script>
 	</head>
 
 	<body>
 		<header>
+			<!-- <button id="open" href="#"><i class="fas fa-times"></i></button> -->
 			<nav>
 				<a href="#"><img src="ressources/images/logo_txt.svg"></a>
 				<ul>
@@ -28,6 +33,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
+			<!-- <button id="open" href="#"><i class="fas fa-bars"></i></button> -->
 		</header>
 
 		<aside>
@@ -41,17 +47,22 @@
 		<main>
 
 			<section id="accueil">
-				<div id="clip"></div>
-				<article id="bandeaux">
+
+				<div id="bandeaux">
 					<img src="./ressources/images/bandeau_noir.gif" alt="bandeau gris">
 					<img src="./ressources/images/bandeau_noir.gif" alt="bandeau noir">
+				</div>
+				<!-- <div id="clip"></div> -->
+
+				<article>
+					<img src="./ressources/images/contes_legendes.jpg" alt="le iench">
+					<div>
+						<h3>Le iench</h3>
+						<p>10-20 <span>novembre</span></p>
+						<a href="#" class="btn ticket">réserver <img src="./ressources/images/ticket.svg" alt="ticket"></a>
+					</div>
 				</article>
 
-				<article id="news">
-					<h3>Le iench</h3>
-					<p>10-20 <span>novembre</span></p>
-					<a href="#" class="btn ticket">réserver <img src="./ressources/images/ticket.svg" alt="ticket"></a>
-				</article>
 			</section> 
 
 			<section id="agenda">
@@ -62,7 +73,7 @@
 						<!-- <p>Aou.<span>[2021]</span></p> -->
 						<p>Sep.<span>[2021]</span></p>
 						<p>Oct.<span>[2021]</span></p>
-						<p>Nov.<span>[2021]</span></p>
+						<p class="active">Nov.<span>[2021]</span></p>
 						<p>Dec.<span>[2021]</span></p>
 						<p>Janv.<span>[2022]</span></p>
 					</div>
@@ -350,6 +361,6 @@
 				<img src="ressources/images/logo_icon.png" alt="logo_icon">
 			</article>
 		</footer>
-
+		<script src="./js/index.js"></script>
 	</body>
 </html>

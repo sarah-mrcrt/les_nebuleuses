@@ -33,22 +33,44 @@ img {
 
 /*************** Structure & Habillage ***************/
 .container {
-	padding: 0 6rem;
-	/* width: 80%; */
+	width: 80%;
 	/* Centrer le containeur sur la page */
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(251, 255, 0, 0.24);
+	/* background-color: rgba(251, 255, 0, 0.24); */
 }
 
 section {
 	max-width: 100vw;
 	min-height: 100vh;
-	margin: 5rem 0 5rem 0;
-	padding: 5rem 0 5rem 0;
-	background-color: rgba(255, 0, 0, 0.281);
+	margin: 8vh 0;
+	padding: 8vh 0;
+	/* background-color: rgba(255, 0, 0, 0.281); */
 }
 
-article{
-	background-color: blueviolet;
+/* article{
+background-color: blueviolet;
+} */
+
+/*************** Barre de défilement ***************/
+/* Epaisseur scrollbar */
+::-webkit-scrollbar{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+/* Thumb */
+::-webkit-scrollbar-thumb{
+	background: var(--clementine);
+	transition: all 0.5s ease;
+}
+::-webkit-scrollbar-thumb:hover{
+	background: var(--orange)
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+	background: var(--fond_bg);
+	border: 0.5px solid var(--gris_clair);
+	box-shadow: inset 0px var(--fond_bg);
 }

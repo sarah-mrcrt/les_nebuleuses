@@ -1,11 +1,11 @@
 /***************  Fonts réactive  ***************/
 p, a, h1, h2, h3, h4, h5, h6 {
-	/* "min" = valeur minimale; "val" = valeur préférée; "max" = valeur maximale  */
+	/* "min" = valeur minimale; "val" = valeur préférée en unité relative; "max" = valeur maximale  */
 	font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 /*************** Textes ***************/
-p, a {
+p, a, strong, span {
 	--min: 1rem;  
 	--val: 3.5vw; 
 	--max: 1.125rem;
@@ -19,10 +19,10 @@ strong {
 h1 {
 	/* Size */
 	--min: 2rem; 
-	--val: 10vw; 
+	--val: 9vw; 
 	--max: 7rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
-	line-height: clamp(1rem, 4rem, 6rem);
+	line-height: clamp(1rem, 6vh, 6rem);
 	font-weight : bold;
 	color: var(--noir);
 	text-transform: uppercase;
@@ -34,25 +34,38 @@ h1 {
 h1::before, h1::after {
 	content:"";
 	background-image: url('../../ressources/images/outline_star.svg');
-	background-size: 60px;
-	width: 60px;
-	height: 60px;
+	background-size: 4vw;
+	width: 4vw;
+	height: 4vw;
 	background-repeat: no-repeat;
 	display: inline-block;
 	vertical-align: 25%;
-	margin: 0 30px;
+	margin: 0 2vw;
 }
 
 h2 {
 	font-family: lilgroteskbold;
+	/* il n'y en a pas */
 }
 
 h3 {
 	font-family: monument;
-	font-size: 29px;
+	--min: 2rem; 
+	--val: 2vw; 
+	--max: 4vw;
 }
 
 h4 {
 	font-family: monument;
 	font-size: 17px;
 }
+
+/* h1 {
+font-size: 5.9vw;
+}
+h2 {
+font-size: 3.0vh;
+}
+p {
+font-size: 2vmin;
+} */

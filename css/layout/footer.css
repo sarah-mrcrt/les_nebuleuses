@@ -42,10 +42,11 @@ footer article:nth-child(2n) {
 	/* width: 80%;	*/
 	align-items: flex-start;
 	justify-content: space-around;
-	/* background-color: blue; */
 	padding: 5rem 0;
 }
-
+footer article .social_medias > * {
+	margin: .5rem;
+}
 footer article .social_medias ul {
 	display: flex;
 	justify-content: space-around;
@@ -60,7 +61,7 @@ footer article:nth-child(3n) ul {
 }
 
 footer article:nth-child(3n) ul li {
-	margin: 0 2rem;
+	margin: 0.5rem 2rem;
 	text-transform: uppercase;
 }
 
@@ -70,7 +71,7 @@ footer article:nth-child(3n) ul li a {
 
 footer img {
 	position: absolute;
-	z-index: 0;
+	z-index: -1;
 	right: 0;
 	bottom: -2rem;
 	width: 10%;
