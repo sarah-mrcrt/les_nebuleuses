@@ -30,6 +30,8 @@ footer h1::before, footer h1::after {
 
 /*************** Article ***************/
 footer article {
+    margin-left: auto;
+    margin-right: auto;
 	text-align: center	;
 	position: relative;
 	display: flex;
@@ -39,7 +41,7 @@ footer article {
 
 /*** Informations de contact ***/
 footer article:nth-child(2n) {	
-	/* width: 80%;	*/
+	width: 80%;	
 	align-items: flex-start;
 	justify-content: space-around;
 	padding: 5rem 0;
@@ -55,6 +57,7 @@ footer article .social_medias ul {
 
 /*** Mentions d'informations ***/
 footer article:nth-child(3n) ul {
+	/* width: 95%; */
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;

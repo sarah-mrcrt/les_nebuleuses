@@ -18,6 +18,7 @@
 	header, aside {
 		display: none;
 	}
+
 	/*************** Titres  ***************/
 	h1 {
 		padding: 2rem 0;
@@ -45,8 +46,10 @@
 		left: -13%;}
 
 	/*************** Informations pratiques  ***************/
+	#infos_pratiques.container {
+		width: 100%;}
+
 	#infos_pratiques .grid  {
-		width: 100%;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(4, 50vw);
 		grid-template-areas:
@@ -62,11 +65,10 @@
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
 		justify-content: space-around;
 	}
-	/* Titre */
+
 	footer h1 {
 		padding: 0;
 	}
-	/*Article */
 
 	footer img {
 		position: absolute;
@@ -91,32 +93,34 @@
 }
 
 /* Gros appareils (ordinateurs portables/de bureau, 992px et plus) */
-@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
-	body {
-		background-color: blue;
+@media only screen and (min-width: 992px) {
+	/*************** Agenda ***************/
+	#agenda #representation article {
+		grid-gap: 1vw;
+		grid-template-columns: 1fr 1fr 0fr 0fr;
 	}
-	/*************** Informations pratiques  ***************/
+
+	/*************** Informations pratiques ***************/
 	#infos_pratiques .grid {
-		width: 0;}
+		width: 100%;
+	}
+
 	/*************** Footer  ***************/
 	footer {
 		height: 80vh;
+		/* justify-content: center; */
 	}
+
 
 	footer h1 {
 		padding: 1rem;
 	}
+	/* footer img {
+	bottom: -10rem;
+	width: 15%;} */
 }
 
 /* Périphériques extra-larges (ordinateurs portables et de bureau de grande taille, 1200px et plus) */
 @media only screen and (min-width : 1200px) {
-	body {
-		background-color: red;
-	}
-}
 
-/* --xs:420px;
---sm:630px;
---md:768px;
---lg:992px;
---xl:1200px; */
+}

@@ -18,11 +18,11 @@ strong {
 /*************** Titres ***************/
 h1 {
 	/* Size */
-	--min: 2rem; 
-	--val: 9vw; 
-	--max: 7rem;
+	--min: 6vw; 
+	--val: 8vw; 
+	--max: 10vw;
 	font-family: lilgroteskbold, Arial, sans-serif;
-	line-height: clamp(1rem, 6vh, 6rem);
+	line-height: clamp(1rem, 11vw, 6rem);
 	font-weight : bold;
 	color: var(--noir);
 	text-transform: uppercase;
@@ -34,12 +34,12 @@ h1 {
 h1::before, h1::after {
 	content:"";
 	background-image: url('../../ressources/images/outline_star.svg');
-	background-size: 4vw;
-	width: 4vw;
-	height: 4vw;
+	background-size: clamp(1vw, 2vw, 4vw);
+	width: clamp(1vw, 2vw, 4vw);
+	height: clamp(1vw, 2vw, 4vw);
 	background-repeat: no-repeat;
 	display: inline-block;
-	vertical-align: 25%;
+	vertical-align: 10%;
 	margin: 0 2vw;
 }
 
