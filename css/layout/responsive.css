@@ -16,10 +16,29 @@ Informations pratiques : +
 page en savoir + */
 /* Dispositifs très petits (téléphones, 630px et moins) */
 @media only screen and (max-width : 630px)  {
+/*************** Evenements  ***************/
+	/* Entete */
+	.evenements .header_event {
+		flex-direction: column;
+		text-align: center;
+	}
 
+	.evenements .header_event .picture {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.evenements .header_event .titre .rectangle {
+		display: none;
+	}
+	/* Contenu éditorial  */
+	.evenements .editor_event article {
+		width: 100%;
+	}
 }
 
-/* Périphériques de taille moyenne (tablettes en mode paysage, 768px et plus) */
+/* Périphériques de taille moyenne (tablettes, 768px et plus) */
 @media only screen and (max-width : 768px) {
 	header, aside {
 		display: none;
@@ -31,7 +50,7 @@ page en savoir + */
 	}
 
 	/*************** Accueil  ***************/
-	
+
 	/*************** Agenda  ***************/
 	/* Calendrier */
 	#agenda #calendrier {
@@ -82,6 +101,8 @@ page en savoir + */
 			"transport.";
 	}
 
+	
+
 	/*************** Footer  ***************/
 	footer {
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
@@ -122,17 +143,12 @@ page en savoir + */
 		grid-gap: 1vw;
 		grid-template-columns: 1fr 1fr 0fr 0fr;
 	}
-
 	/*************** Footer  ***************/
-	/* footer {
-	margin-top: 4vh;
-} */
 	footer h1 {
 		padding: 1rem;
 	}
 }
 
 /* Périphériques extra-larges (ordinateurs portables et de bureau de grande taille, 1200px et plus) */
-@media only screen and (min-width : 1200px) {
-
-}
+/* @media only screen and (min-width : 1200px) {
+} */

@@ -13,26 +13,10 @@
 @import url(./sections/1accueil.css);
 @import url(./sections/2agenda.css);
 @import url(./sections/3infos_pratiques.css);
-@import url(./sections/4savoir+.css);
+@import url(./sections/4fiche_evenement.css);
 /* Layout */
 @import url(./layout/body.css);
 @import url(./layout/header.css);
 @import url(./layout/aside.css);
 @import url(./layout/footer.css);
 @import url(./layout/responsive.css);
-
-
-/* // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) { ... }
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */

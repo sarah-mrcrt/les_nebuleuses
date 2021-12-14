@@ -51,12 +51,6 @@
 	display: grid;
 } 
 #accueil article .rectangle{
-	    position: absolute;
-    z-index: -100;
     bottom: -4%;
-        left: -60%;
-    width: 58rem;
-    height: 200px;
-    background: var(--orange);
-    transform: rotate(-7deg);
+    left: -60%;
 }

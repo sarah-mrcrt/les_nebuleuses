@@ -40,8 +40,8 @@
 	min-width: 100%;
 	min-height: 100%;
 	/* Images centré dans les grilles */
-   	top: 50%;
-  	transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #infos_pratiques .grid article h3 {
@@ -105,5 +105,5 @@
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 	top: 50%;
-  	transform: translateY(-50%);
+	transform: translateY(-50%);
 }
