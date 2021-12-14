@@ -116,12 +116,12 @@
 }
 
 /*** Dates & Tarifs ***/ 
-#agenda #representation article .date_tarif span {
+.en_details .date_tarif span {
 	position: relative;
 	padding: 1rem;
 }
 
-#agenda #representation article .date_tarif span:first-of-type:before {
+.en_details .date_tarif span:first-of-type:before {
 	/* Soulignement */
 	content: '';
 	width: 45%;

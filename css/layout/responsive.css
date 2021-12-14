@@ -29,17 +29,34 @@ page en savoir + */
 	h1 {
 		padding: 2rem 0;
 	}
+
 	/*************** Accueil  ***************/
+	
 	/*************** Agenda  ***************/
+	/* Calendrier */
 	#agenda #calendrier {
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
 	}
 
-	#agenda #calendrier #mois, #agenda #calendrier .arrows {
-		padding: 1rem 0;
+	#agenda #calendrier #mois p:nth-last-child(-n+2) {
+		display: none;
 	}
+
+	#agenda #calendrier #mois p span {
+		font-size: clamp(.1rem, 3.5vw, 1.125rem);
+		right: -13%;
+    	bottom: 49%;
+		transform: rotate(-90deg);
+		font-size: 0.6rem;
+	}
+	
+	#agenda #calendrier #mois, #agenda #calendrier .arrows {
+		padding: 0;
+	}
+
+	/* Representation */
 	#agenda #representation article {
 		grid-template-columns: repeat(1, 1fr);
 	}
@@ -49,13 +66,10 @@ page en savoir + */
 	}
 
 	#agenda #representation article .picture div {
-		left: -13%;}
+		left: -13%;
+	}
 
 	/*************** Informations pratiques  ***************/
-	/* #infos_pratiques.container {
-	width: 90%;} */
-
-
 	#infos_pratiques .grid  {
 		width: 100%;
 		column-gap: 0;
@@ -70,7 +84,6 @@ page en savoir + */
 
 	/*************** Footer  ***************/
 	footer {
-		/* height: 100vh; */
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
 		justify-content: space-around;
 	}
@@ -87,6 +100,7 @@ page en savoir + */
 		width: 23%;
 	} 
 
+	/* Article */
 	footer article:nth-child(2n), footer article:nth-child(3n) ul{
 		align-items: center;
 		flex-direction: column;
@@ -113,8 +127,6 @@ page en savoir + */
 	/* footer {
 	margin-top: 4vh;
 } */
-
-
 	footer h1 {
 		padding: 1rem;
 	}
