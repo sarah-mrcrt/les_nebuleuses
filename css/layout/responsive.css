@@ -8,15 +8,71 @@
 
 /* taille d'écran donnée ou moins = max-width */
 
+
 /* 
-Titres
-Accueil
-Calendrier : leches + mois
-Informations pratiques : + 
-page en savoir + */
+=> export logo : https://realfavicongenerator.net/
+=> header version responsive
+___
+header: js
+infos pratiques : + du hover 
+
+titres h1/h2
+bandeau orange pb z-index
+___
+pages + responsive : accueil & evenements
+Calendrier : fleches + mois
+Tailles aux images de l'agenda
+Responsive: accueil / fiche événement
+*/
+
 /* Dispositifs très petits (téléphones, 630px et moins) */
 @media only screen and (max-width : 630px)  {
-/*************** Evenements  ***************/
+	#open{
+		display:block;
+		position:fixed;
+		height:30px;
+		/* left:10px;
+		top:5px; */
+		/* background-color:white;
+		border:none;
+		border-radius:10px; */
+	}
+
+	#open i{
+		max-height:100%;
+	}
+
+	header nav{
+		position:fixed;
+		z-index:2;
+		background-color: orange;
+		width:250px;
+		height:100vh;
+		left:0;
+		transform:translateX(-250px);
+		transition:transform 0.25s ease-in-out;
+	}
+
+	header nav ul{
+		height:auto;
+		margin-top:40px;
+	}
+
+	header nav ul li, header nav ul li a{
+		height:auto;
+	}
+
+	#close{
+		display:block;
+		position:absolute;
+		/* top:10px;
+		right:10px; */
+
+		/* color:#FFF;
+		background-color:transparent;
+		border:none; */
+	}
+	/*************** Evenements  ***************/
 	/* Entete */
 	.evenements .header_event {
 		flex-direction: column;
@@ -38,9 +94,9 @@ page en savoir + */
 	}
 }
 
-/* Périphériques de taille moyenne (tablettes, 768px et plus) */
+/* Périphériques de taille moyenne (tablettes, 768px et +) */
 @media only screen and (max-width : 768px) {
-	header, aside {
+	aside {
 		display: none;
 	}
 
@@ -50,6 +106,16 @@ page en savoir + */
 	}
 
 	/*************** Accueil  ***************/
+	.evenements .header_event .picture, .evenements .header_event .titre {
+		text-align: center;
+		width: 100%;
+		padding: 0;
+	}
+
+	.evenements .header_event .picture .polygone {
+		right: -9%;
+		top: 0;
+	}
 
 	/*************** Agenda  ***************/
 	/* Calendrier */
@@ -66,11 +132,11 @@ page en savoir + */
 	#agenda #calendrier #mois p span {
 		font-size: clamp(.1rem, 3.5vw, 1.125rem);
 		right: -13%;
-    	bottom: 49%;
+		bottom: 49%;
 		transform: rotate(-90deg);
 		font-size: 0.6rem;
 	}
-	
+
 	#agenda #calendrier #mois, #agenda #calendrier .arrows {
 		padding: 0;
 	}
@@ -101,8 +167,6 @@ page en savoir + */
 			"transport.";
 	}
 
-	
-
 	/*************** Footer  ***************/
 	footer {
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
@@ -123,7 +187,7 @@ page en savoir + */
 
 	/* Article */
 	footer article:nth-child(2n), footer article:nth-child(3n) ul{
-		align-items: center;
+		/* align-items: center; */
 		flex-direction: column;
 	}
 
@@ -136,19 +200,15 @@ page en savoir + */
 	}
 }
 
-/* Gros appareils (ordinateurs portables/de bureau, 992px et plus) */
+/* Gros appareils (ordinateurs portables/de bureau, 992px et +) */
 @media only screen and (min-width: 992px) {
 	/*************** Agenda ***************/
-	#agenda #representation article {
-		grid-gap: 1vw;
-		grid-template-columns: 1fr 1fr 0fr 0fr;
-	}
+	/* #agenda #representation article {
+	grid-gap: 1vw;
+	grid-template-columns: 1fr 1fr 0fr 0fr;
+} */
 	/*************** Footer  ***************/
 	footer h1 {
 		padding: 1rem;
 	}
 }
-
-/* Périphériques extra-larges (ordinateurs portables et de bureau de grande taille, 1200px et plus) */
-/* @media only screen and (min-width : 1200px) {
-} */

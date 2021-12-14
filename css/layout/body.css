@@ -37,7 +37,7 @@ img {
 	/* Centrer le containeur sur la page */
 	margin-right: auto;
 	margin-left: auto;
-	background-color: rgba(251, 255, 0, 0.24);
+	/* background-color: rgba(251, 255, 0, 0.24); */
 }
 
 section {
@@ -45,11 +45,7 @@ section {
 	min-height: 100vh;
 	margin: 6vw 0;
 	padding: 3vw 0;
-	background-color: rgba(255, 0, 0, 0.281);
-}
-
-article{
-	background-color: rgba(137, 43, 226, 0.26);
+	/* background-color: rgba(255, 0, 0, 0.281); */
 }
 
 /*************** Barre de défilement ***************/
@@ -72,15 +68,5 @@ article{
 ::-webkit-scrollbar-track{
 	background: var(--fond_bg);
 	border: 0.5px solid var(--gris_clair);
-	box-shadow: inset 0px var(--fond_bg);
-}
-
-/*************** Rectangle ***************/
-.rectangle{
-	position: absolute;
-	z-index: -1;
-	background-color: var(--orange);
-	width: 58rem;
-	height: 200px;
-	transform: rotate(-7deg);
+	box-shadow: inset 0 var(--fond_bg);
 }

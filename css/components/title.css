@@ -27,9 +27,8 @@ h1 {
 	color: var(--noir);
 	text-transform: uppercase;
 	text-align: center;
-	padding: 4rem;
+	padding: 4rem 0;
 	position: relative;
-	background-color: rgba(165, 42, 42, 0.185);
 }
 
 h1::before, h1::after {
