@@ -6,27 +6,19 @@
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
 
-/* taille d'écran donnée ou moins = max-width */
-
-
 /* 
-=> export logo : https://realfavicongenerator.net/
 => header version responsive
 ___
-header: js
 infos pratiques : + du hover 
-
-titres h1/h2
-bandeau orange pb z-index
 ___
-pages + responsive : accueil & evenements
+pages + responsive : accueil (fleches) & evenements
 Calendrier : fleches + mois
-Tailles aux images de l'agenda
-Responsive: accueil / fiche événement
+=> Tailles aux images de l'agenda + soulignement
 */
 
-/* Dispositifs très petits (téléphones, 630px et moins) */
+/* Dispositifs très petits (téléphones, 630px et -) */
 @media only screen and (max-width : 630px)  {
+	/*************** Menu burger  ***************/
 	#open{
 		display:block;
 		position:fixed;
@@ -40,6 +32,11 @@ Responsive: accueil / fiche événement
 
 	#open i{
 		max-height:100%;
+	}
+	
+	#close{
+		display:block;
+		position:absolute;
 	}
 
 	header nav{
@@ -61,17 +58,6 @@ Responsive: accueil / fiche événement
 	header nav ul li, header nav ul li a{
 		height:auto;
 	}
-
-	#close{
-		display:block;
-		position:absolute;
-		/* top:10px;
-		right:10px; */
-
-		/* color:#FFF;
-		background-color:transparent;
-		border:none; */
-	}
 	/*************** Evenements  ***************/
 	/* Entete */
 	.evenements .header_event {
@@ -92,7 +78,13 @@ Responsive: accueil / fiche événement
 	.evenements .editor_event article {
 		width: 100%;
 	}
+	.header_event h2::before {
+		display: inline-block;
+		background-image: url('../../ressources/images/fill_star.svg');
+
+	}
 }
+
 
 /* Périphériques de taille moyenne (tablettes, 768px et +) */
 @media only screen and (max-width : 768px) {
@@ -187,7 +179,7 @@ Responsive: accueil / fiche événement
 
 	/* Article */
 	footer article:nth-child(2n), footer article:nth-child(3n) ul{
-		/* align-items: center; */
+		align-items: center;
 		flex-direction: column;
 	}
 

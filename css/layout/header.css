@@ -22,7 +22,8 @@ header nav {
 	align-items: center;
 	justify-content: space-between;
 }
-header img  {
+
+header svg  {
 	width: 75%;
 	text-align: left;
 }
@@ -46,11 +47,12 @@ header button {
 	background-color: transparent;
 }
 #open,  #close{
-    display:none;
+	display:none;
 	font-size: 2em;
 	margin: 0 2rem;
 }
 
 header nav.open{
-    transform:translateX(0px);
+	transform:translateX(0px);
 }
+/* https://codepen.io/bee-3/pen/OJjVgvN */

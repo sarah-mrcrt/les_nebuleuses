@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 		<!-- Encodage -->
 		<meta charset="utf-8" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<!-- Référencement -->
 		<title>La nébuleuse</title>
@@ -13,19 +11,34 @@
 		<meta name="description" content="La nébuleuse est un théâtre">
 		<meta name="author" content="Emilie Perret & Sarah Mauriaucourt">
 		<!-- Icônes -->
-		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./ressources/images/icones/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./ressources/images/icones/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./ressources/images/icones/favicon-16x16.png">
+		<link rel="manifest" href="./ressources/images/icones/site.webmanifest">
+		<link rel="mask-icon" href="./ressources/images/icones/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#ff8607">
+		<meta name="theme-color" content="#ffffff">
 		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/import.css" />
 		<!-- Javascript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!-- <script src="./js/index.js"></script> -->
+		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 
 	<body>
 		<header>
 			<nav>
 				<button id="open" href="#"><i class="fas fa-times"></i></button> 
-				<a href="#"><img src="ressources/images/logo_txt.svg"></a>
+				<h1>
+					<a href="index.html">
+						<svg id="Nebuleuse_noir" data-name="Nebuleuse noir" xmlns="http://www.w3.org/2000/svg" width="376.739" height="72" viewBox="0 0 376.739 72">
+							<g id="Groupe_3" data-name="Groupe 3" transform="translate(-60.824 -7.586)">
+								<text id="LA_NÉBULEUSE" data-name="LA  NÉBULEUSE" transform="translate(60.824 70.586)" fill="#212121" font-size="60" font-family="Gulax-Regular, Gulax"><tspan x="0" y="0" xml:space="preserve">LA  NÉBULEUSE</tspan></text>
+								<path id="Tracé_7" data-name="Tracé 7" d="M129.881,45.013l1.129,4.721,3.688-3.156-1.862,4.483,4.839-.386-4.141,2.532,4.141,2.532-4.839-.386,1.862,4.483-3.688-3.156L129.881,61.4l-1.129-4.721-3.688,3.156,1.862-4.483-4.839.386,4.141-2.532-4.141-2.532,4.839.386-1.862-4.483,3.688,3.156Z" fill="#212121"/>
+								<path id="Tracé_8" data-name="Tracé 8" d="M429.769,45.067l1.129,4.721,3.688-3.156-1.862,4.483,4.839-.386-4.141,2.532,4.141,2.532-4.839-.386,1.862,4.483L430.9,56.735l-1.129,4.721-1.129-4.721-3.688,3.156,1.862-4.483-4.839.386,4.141-2.532-4.141-2.532,4.839.386-1.862-4.483,3.688,3.156Z" fill="#212121"/>
+							</g>
+						</svg>
+					</a> 
+				</h1>
 				<ul>
 					<li><a href="#accueil">Accueil</a></li>
 					<li><a href="#agenda">Agenda</a></li>
@@ -47,12 +60,11 @@
 		<main>
 
 			<section id="accueil">
-
 				<div id="bandeaux">
 					<img src="./ressources/images/bandeau_gris.gif" alt="bandeau gris">
 					<img src="./ressources/images/bandeau_noir.gif" alt="bandeau noir">
+					<div class="rectangle"></div>
 				</div>
-				<!-- <div id="clip"></div> -->
 
 				<article>
 					<img src="./ressources/images/image_polygone.png" alt="le iench">
@@ -60,18 +72,21 @@
 						<h3>Le iench</h3>
 						<p>10-20 <span>novembre</span></p>
 						<a href="#" class="btn ticket">réserver <img src="./ressources/images/ticket.svg" alt="ticket"></a>
-						<div class="rectangle"></div>
 					</div>
 				</article>
 
+				<div class="arrows">
+					<svg class="left_arrow" xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
+
+					<svg class="right_arrow" xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
+				</div>
 			</section> 
 
 			<section id="agenda">
-				<h1>Agenda</h1>
+				<h2>Agenda</h2>
 
 				<div id="calendrier">
 					<div id="mois">
-						<!-- <p>Aou.<span>[2021]</span></p> -->
 						<p>Sep.<span>[2021]</span></p>
 						<p>Oct.<span>[2021]</span></p>
 						<p class="active">Nov.<span>[2021]</span></p>
@@ -80,13 +95,13 @@
 					</div>
 
 					<div class="arrows">
-						<div class="left_arrow">
-							<svg xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
+						<div>
+							<svg class="left_arrow" xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
 							<span>mois précédent</span>
 						</div>
 
-						<div class="right_arrow">
-							<svg xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
+						<div>
+							<svg class="right_arrow" xmlns="http://www.w3.org/2000/svg" width="90.071" height="28.069" viewBox="0 0 90.071 28.069"><g transform="translate(1.351)"><path d="M6275.272,962.057s1.421-4.473,0-11.463a31.619,31.619,0,0,0-5.975-12.276c-9.644-12.747,40.144,21.762,38.287,22.979S6275.272,962.057,6275.272,962.057Z" transform="translate(-6219.301 -935.496)" fill="#212121"/><path d="M87.369-.025,0,.044" transform="translate(0 26.674)" fill="none" stroke="#212121" stroke-linecap="round" stroke-width="2.7"/></g></svg>
 							<span>mois suivant</span>	
 						</div>
 					</div>
@@ -225,7 +240,7 @@
 						</div>
 						<p class="date_tarif">
 							<strong>Vendredi 22 octobre 2021</strong> 
-							<span>21h > 00h15</span>
+							<span>21h > 00h25</span>
 							<span>de 10 à 110€</span>
 						</p>
 						<p class="infos_performance"> 
@@ -269,11 +284,11 @@
 								<span>Musique</span>
 								<img src="./ressources/images/orange_polygone.svg" alt="polygone">
 							</div>
-							<img src='./ressources/images/Pensieri Isolati.jpg' alt="Pensieri Isolati">
+							<img src='./ressources/images/pensier_isolati.jpg' alt="Pensieri Isolati">
 						</div>
 						<p class="date_tarif">
 							<strong>Samedi 30 octobre 2021</strong> 
-							<span>19h > 20h15</span>
+							<span>19h > 20h25</span>
 							<span>de 5 à 15€</span>
 						</p>
 						<p class="infos_performance"> 
@@ -290,14 +305,14 @@
 
 			<section id="infos_pratiques" class="container">
 				<!-- images + hover ? -->
-				<h1>Infos pratiques</h1>
+				<h2>Infos pratiques</h2>
 
 				<div class="grid">
 					<article id="restauration">
 						<img src="./ressources/images/restauration.jpg" alt="Restauration">
 						<h3>Restauration</h3>
 						<div class="overlay">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath id="a"><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
 						</div>
 					</article>
 
@@ -305,7 +320,7 @@
 						<img src="ressources/images/covid.jpg" alt="Covid">
 						<h3>Covid</h3>
 						<div class="overlay">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath id="a"><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
 						</div>
 					</article>
 
@@ -313,7 +328,7 @@
 						<img src="ressources/images/billetterie.jpg" alt="Billeterie">
 						<h3>Billetterie</h3>
 						<div class="overlay">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath id="a"><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
 						</div>
 					</article>
 
@@ -321,7 +336,7 @@
 						<img src="ressources/images/transport.jpg" alt="Transport" >
 						<h3>Transport</h3>
 						<div class="overlay">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath id="a"><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
+							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="160" height="160" viewBox="0 0 160 160"><defs><clipPath><rect width="160" height="160" fill="none" stroke="#fff" stroke-width="10"/></clipPath></defs><g clip-path="url(#a)"><circle cx="74.5" cy="74.5" r="74.5" transform="translate(6 6)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="#fff" stroke="#fff" stroke-width="10"/><line y2="73.967" transform="translate(80.32 43.337)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="#fff" stroke="#fff" stroke-width="10"/><line x1="73.967" transform="translate(43.336 80.32)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="10"/></g></svg>
 						</div>
 					</article>
 				</div>
@@ -329,7 +344,7 @@
 		</main>
 
 		<footer id="contact">
-			<h1>Contact</h1>
+			<h2>Contact</h2>
 
 			<article>
 				<div>
@@ -362,6 +377,9 @@
 				<img src="ressources/images/logo_icon.png" alt="logo_icon">
 			</article>
 		</footer>
+
+		<!-- Javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>

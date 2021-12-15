@@ -78,7 +78,7 @@
 	width: 30%;
 }
 
-.left_arrow svg{
+.left_arrow {
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 }
@@ -122,12 +122,12 @@
 }
 
 /*** Dates & Tarifs (COMMUN AUX PAGES D'ÉVÉNEMENTS) ***/ 
-.en_details .date_tarif span {
+article .date_tarif span {
 	position: relative;
 	padding: 1rem;
 }
 
-.en_details .date_tarif span:first-of-type:before {
+article .date_tarif span:first-of-type:before {
 	/* Soulignement */
 	content: '';
 	width: 45%;

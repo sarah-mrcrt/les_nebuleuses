@@ -16,7 +16,10 @@ strong {
 }
 
 /*************** Titres ***************/
-h1 {
+/*** h1 : Logo ***/
+/*** h2 : Titres ***/
+/* Page d'accueil */
+h2 {
 	/* Size */
 	--min: 6vw; 
 	--val: 8vw; 
@@ -31,7 +34,7 @@ h1 {
 	position: relative;
 }
 
-h1::before, h1::after {
+h2::before, h2::after {
 	content:"";
 	background-image: url('../../ressources/images/outline_star.svg');
 	background-size: clamp(1vw, 2vw, 4vw);
@@ -43,11 +46,24 @@ h1::before, h1::after {
 	margin: 0 2vw;
 }
 
-h2 {
-	font-family: lilgroteskbold;
-	/* il n'y en a pas */
+/* Pages d'événements/performances */
+.header_event h2 {
+	font-family: 'gulax';
+	text-align: left;
+	text-transform: none;
+	padding-left: 0;
+	padding-bottom: 0;
 }
 
+.header_event h2::before {
+	display: none;
+}
+
+.header_event h2::after {
+	background-image: url('../../ressources/images/fill_star.svg');
+}
+
+/*** h3 & h4 : Sous-titres ***/
 h3 {
 	font-family: monument;
 	--min: 2rem; 
@@ -60,12 +76,18 @@ h4 {
 	font-size: 17px;
 }
 
-/* h1 {
-font-size: 5.9vw;
-}
-h2 {
-font-size: 3.0vh;
-}
-p {
-font-size: 2vmin;
+/*** h5 : Nom artiste ***/
+/* h5 {
+
+} */
+
+/*** h6 : Nom performance ***/
+/* h6 {
+	font-size: 2rem;
+	font-family: lilgroteskbold, Arial, sans-serif;
+	-webkit-text-stroke: 0.1rem;
+	-webkit-text-stroke-color: var(--noir);
+	color: transparent;
+	margin: 0;
+	padding: 1rem;
 } */

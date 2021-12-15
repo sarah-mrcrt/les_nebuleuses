@@ -21,11 +21,11 @@ footer {
 }
 
 /*************** Titre ***************/
-footer h1 {
+footer h2 {
 	color: var(--blanc);
 }
 
-footer h1::before, footer h1::after {
+footer h2::before, footer h2::after {
 	filter: invert(1);
 }
 
@@ -35,10 +35,9 @@ footer article {
 	position: relative;
 	display: flex;
 	flex-wrap: wrap;
-	/* justify-content: center; */
 }
 
-/*** Informations de contact ***/
+/* Informations de contact */
 footer article:nth-child(2n) {	
 	margin-left: auto;
 	margin-right: auto;
@@ -56,7 +55,7 @@ footer article .social_medias ul {
 	flex-wrap: wrap;
 }
 
-/*** Mentions d'informations ***/
+/* Mentions d'informations */
 footer article:nth-child(3n) ul {
 	margin-left: auto;
 	margin-right: auto;

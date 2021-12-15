@@ -4,8 +4,7 @@
 	<head>
 		<!-- Encodage -->
 		<meta charset="utf-8" />
-		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 		<!-- Référencement -->
 		<title>La nébuleuse</title>
@@ -13,19 +12,34 @@
 		<meta name="description" content="La nébuleuse est un théâtre">
 		<meta name="author" content="Emilie Perret & Sarah Mauriaucourt">
 		<!-- Icônes -->
-		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
+		<link rel="apple-touch-icon" sizes="180x180" href="./ressources/images/icones/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./ressources/images/icones/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./ressources/images/icones/favicon-16x16.png">
+		<link rel="manifest" href="./ressources/images/icones/site.webmanifest">
+		<link rel="mask-icon" href="./ressources/images/icones/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#ff8607">
+		<meta name="theme-color" content="#ffffff">
 		<!-- Stylesheet -->
 		<link rel="stylesheet" type="text/css" href="./css/import.css" />
 		<!-- Javascript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="./js/index.js"></script>
+		<script src='https://kit.fontawesome.com/c51a60e485.js' crossorigin='anonymous' integrity='sha384-NBHAuYUNWKduo4crumSk720p46lSGmSF7SDtoMEmu+SnsanQ94l8NiUhAPI0UIqx'></script>
 	</head>
 
 	<body>
 		<header>
-			<!-- <button id="open" href="#"><i class="fas fa-times"></i></button> -->
 			<nav>
-				<a href="index.html"><img src="ressources/images/logo_txt.svg"></a>
+				<button id="close" href="#"><i class="fas fa-times"></i></button>
+				<h1>
+					<a href="index.html">
+						<svg id="Nebuleuse_noir" data-name="Nebuleuse noir" xmlns="http://www.w3.org/2000/svg" width="376.739" height="72" viewBox="0 0 376.739 72">
+							<g id="Groupe_3" data-name="Groupe 3" transform="translate(-60.824 -7.586)">
+								<text id="LA_NÉBULEUSE" data-name="LA  NÉBULEUSE" transform="translate(60.824 70.586)" fill="#212121" font-size="60" font-family="Gulax-Regular, Gulax"><tspan x="0" y="0" xml:space="preserve">LA  NÉBULEUSE</tspan></text>
+								<path id="Tracé_7" data-name="Tracé 7" d="M129.881,45.013l1.129,4.721,3.688-3.156-1.862,4.483,4.839-.386-4.141,2.532,4.141,2.532-4.839-.386,1.862,4.483-3.688-3.156L129.881,61.4l-1.129-4.721-3.688,3.156,1.862-4.483-4.839.386,4.141-2.532-4.141-2.532,4.839.386-1.862-4.483,3.688,3.156Z" fill="#212121"/>
+								<path id="Tracé_8" data-name="Tracé 8" d="M429.769,45.067l1.129,4.721,3.688-3.156-1.862,4.483,4.839-.386-4.141,2.532,4.141,2.532-4.839-.386,1.862,4.483L430.9,56.735l-1.129,4.721-1.129-4.721-3.688,3.156,1.862-4.483-4.839.386,4.141-2.532-4.141-2.532,4.839.386-1.862-4.483,3.688,3.156Z" fill="#212121"/>
+							</g>
+						</svg>
+					</a> 
+				</h1>
 				<ul>
 					<li><a href="index.html#accueil">Accueil</a></li>
 					<li><a href="index.html#agenda">Agenda</a></li>
@@ -33,7 +47,7 @@
 					<li><a href="index.html#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<!-- <button id="open" href="#"><i class="fas fa-bars"></i></button> -->
+			<button id="open" href="#"><i class="fas fa-bars"></i></button>
 		</header>
 
 		<aside>
@@ -44,18 +58,18 @@
 			</ul>
 		</aside>
 
-        <main class="evenements">
+		<main class="evenements">
 			<section class="header_event">
-            	<div class="picture">
+				<div class="picture">
 					<div class="polygone">
 						<span>Théâtre</span>
 						<img src="./ressources/images/orange_polygone.svg" alt="polygone">
 					</div>
 					<img class="image_rectangle" src='./ressources/images/iliade.jpg' alt="Iliade">
 				</div>
-				
+
 				<div class="titre">
-					<h1>Iliade</h1>
+					<h2>Iliade</h2>
 					<p>par Pauline Bayle</p>
 					<div class="rectangle"></div>
 					<div class="boutons">
@@ -74,7 +88,7 @@
 						<span>de 5 à 45€</span>
 					</p>
 				</div>
-				
+
 				<article>
 					<p>
 						D'un côté les Grecs, de l'autre les Troyens. Iliade est le récit explosif de six jours et six nuits d'une guerre qui dure depuis neuf ans. Parce qu'Agamemnon l'a humilié devant tous ses compagnons, Achille décide de se retirer du combat. Les Grecs vacillent. Comment gagner la guerre sans leur meilleur guerrier ? Dans un élan commun, cinq jeunes artistes mêlent leurs voix pour raconter les histoires d'Achille, Hélène, Andromaque, Hector et Agamemnon. Toutes et tous s'affranchissent des clichés opposant hommes et femmes, lâches et braves, pour venir s'accomplir dans un geste bouleversant d’humanité.
@@ -83,11 +97,11 @@
 						Pauline Bayle signe une formidable adaptation de cette épopée immémoriale. Alors que l’Europe traverse une crise politique majeure, elle nous fait entendre la voix d’Homère, qui nous parle de l’oppression sans jamais tomber dans le manichéisme et met en lumière l’amertume que le sort fait peser sur la lignée des hommes. Parce qu’il n’y a pas de héros, seulement des hommes prêts à tout pour échapper à la souffrance.
 					</p>
 				</article>
-            </section>
-        </main>
+			</section>
+		</main>
 
 		<footer id="contact">
-			<h1>Contact</h1>
+			<h2>Contact</h2>
 
 			<article>
 				<div>
@@ -120,6 +134,9 @@
 				<img src="ressources/images/logo_icon.png" alt="logo_icon">
 			</article>
 		</footer>
+
+		<!-- Javascript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="./js/index.js"></script>
 	</body>
 </html>
