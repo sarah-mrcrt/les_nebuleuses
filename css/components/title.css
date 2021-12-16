@@ -76,18 +76,11 @@ h4 {
 	font-size: 17px;
 }
 
-/*** h5 : Nom artiste ***/
-/* h5 {
-
-} */
-
-/*** h6 : Nom performance ***/
-/* h6 {
-	font-size: 2rem;
+/*** h3 & h4 : Sous-titres ***/
+h5 {
+	font-size: clamp(3rem, 4vw, 8vw);
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
-	-webkit-text-stroke-color: var(--noir);
-	color: transparent;
-	margin: 0;
-	padding: 1rem;
-} */
+	-webkit-text-stroke-color: var(--gris_clair);
+	color: var(--orange);
+}

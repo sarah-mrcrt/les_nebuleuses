@@ -46,9 +46,11 @@ footer article:nth-child(2n) {
 	justify-content: space-around;
 	padding: 5rem 0;
 }
+
 footer article .social_medias > * {
 	margin: .5rem;
 }
+
 footer article .social_medias ul {
 	display: flex;
 	justify-content: space-around;
