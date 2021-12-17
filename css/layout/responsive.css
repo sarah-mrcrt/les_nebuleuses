@@ -8,44 +8,20 @@
 
 /* 
 menu burger
-pages + responsive : accueil & evenements
+responsive : accueil
 Calendrier : fleches + mois
 => Tailles aux images de l'agenda + soulignement
 */
 
 /* Dispositifs très petits (téléphones, 630px et -) */
+@media only screen and (max-width : 630px)   {
+	#accueil {
+		margin: 21vw 0;}
+}
+/* Dispositifs très petits (téléphones, 630px et -) */
 @media only screen and (max-width : 630px)  {
 	#accueil #bandeaux img:first-child {
 		top: 40%;
-	}
-
-	/*EMILIE*/
-	.evenements .header_event .picture .polygone{
-		right: 0%;
-		top: -5%;
-	}
-
-	.header_event p{
-		font-size: 1.8rem;
-		line-height: 3rem;
-	}
-	.header_event .titre h2{
-		text-align: center;
-		font-size: 4.5rem;
-		line-height: 3rem;
-	}
-
-	.header_event h2::before {
-		display: inline-block;
-		background-image: url('../../ressources/images/fill_star.svg');
-		background-size: clamp(1vw, 4vw, 4vw);
-		width: clamp(1vw, 4vw, 4vw);
-		height: clamp(1vw, 4vw, 4vw);
-	}
-	.header_event h2::after {
-		background-size: clamp(1vw, 4vw, 4vw);
-		width: clamp(1vw, 4vw, 4vw);
-		height: clamp(1vw, 4vw, 4vw);
 	}
 }
 
@@ -57,10 +33,9 @@ Calendrier : fleches + mois
 	}
 
 	/*************** Menu burger  ***************/
-	#open{
-		display:block;
-		position:fixed;
-		height:30px;
+	#open {
+		display: block;
+		height: 30px;
 	}
 
 	#open i{
@@ -68,8 +43,8 @@ Calendrier : fleches + mois
 	}
 
 	#close{
-		display:block;
-		position:absolute;
+		display: block;
+		position: absolute;
 	}
 
 	header nav{
@@ -83,40 +58,15 @@ Calendrier : fleches + mois
 		transition:transform 0.25s ease-in-out;
 	}
 
-	header nav ul{
-		height:auto;
-		margin-top:40px;
+	header nav ul {
+		height: auto;
+		margin-top: 40px;
 	}
 
 	header nav ul li, header nav ul li a{
 		height: auto;
 	}
 
-	/*************** Evenements  ***************/
-	/* Entete */
-	.evenements .header_event {
-		flex-direction: column;
-		text-align: center;
-	}
-
-	.evenements .header_event .picture {
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.evenements .header_event .titre .rectangle {
-		display: none;
-	}
-	/* Contenu éditorial  */
-	.evenements .editor_event article {
-		width: 100%;
-	}
-	.header_event h2::before {
-		display: inline-block;
-		background-image: url('../../ressources/images/fill_star.svg');
-
-	}
 
 	/*************** Titres  ***************/
 	h1 {
@@ -215,19 +165,7 @@ Calendrier : fleches + mois
 		display: none;
 	}
 
-	/*************** Evenements  ***************/
-	/* Entete */
-	.evenements .header_event .picture, .evenements .header_event .titre {
-		text-align: center;
-		width: 100%;
-		padding: 0;
-	}
-
-	.evenements .header_event .picture .polygone {
-		right: -9%;
-		top: 0;
-	}
-
+	
 }
 
 /* Gros appareils (ordinateurs portables/de bureau, 992px et +) */
@@ -236,25 +174,31 @@ Calendrier : fleches + mois
 	#accueil article {
 		flex-direction: column;
 		align-items: center;
+		justify-content: end;
 	}
 
 	/* Bandeaux */
-	#accueil #bandeaux img {
-		top: 21%;
+	/* #accueil #bandeaux img {
+		top: 35%;
+		transform: scale(1.5);
 	}
 	#accueil #bandeaux img:first-child {
-		top: 50%;
+		top: 20%;
+		transform: scale(1.5);
 	}
 	#accueil #bandeaux .rectangle {
 		bottom: 21%;
 		width: 100vw;
-		height: 45vh;
-	}
+		height: 30vh;
+		top: 40%;
+		left: 2%;
+	} */
 	/* Actualités */
 	#accueil article #img_news {    
 		width: 80%;
+		margin: 2rem 0;
+		height: 100%;
 	}
-
 
 	/*************** Agenda ***************/
 	/* #agenda #representation article {
@@ -266,4 +210,89 @@ Calendrier : fleches + mois
 	footer h1 {
 		padding: 1rem;
 	}
+
+	/*************** Evenements  ***************/
+	/* Entete */
+	.evenements .header_event {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.evenements .header_event .picture {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.evenements .header_event .picture .polygone {
+		right: 2%;
+		top: 2%;
+	}
+
+	.evenements .header_event .rectangle {
+		background-color: var(--gris_clair);
+		height: 56vw;
+		top: 27%;
+		left: -2%;
+		transform: rotate(355deg) scale(1.2);
+	}
+
+	/* Contenu éditorial  */
+	.evenements .editor_event article {
+		width: 100%;
+	}
+
+	.evenements .header_event .picture, .evenements .header_event .titre {
+		align-items: center;
+		width: 100%;
+		padding: 0;
+	}
+
+	.evenements .header_event .titre h2{
+		text-align: center;
+		font-size: 3rem;
+		line-height: 3rem;
+		padding: 0;
+	}
+
+	.evenements .header_event h2::after,.header_event  h2::before {
+		display: inline-block;
+		background-image: url('../../ressources/images/fill_star.svg');
+	}
+
+	.evenements .header_event .boutons {
+		margin: 3rem 0;
+	}
+}
+
+/* IPAD PRO */
+@media only screen and (max-width: 1024px) and (min-height: 1300px) {
+	/*************** Accueil  ***************/
+	/* #accueil article {
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} */
+
+	/* Bandeaux */
+	/* #accueil #bandeaux img {
+	top: 21%;
+}
+	#accueil #bandeaux img:first-child {
+	top: 33%;
+}
+	#accueil #img_news{
+	width: 67%;
+	margin: 2rem;
+	height: auto;
+}
+	#accueil #bandeaux .rectangle {
+	bottom: 21%;
+	width: 100vw;
+	height: 45vh;
+} */
+	/* Actualités */
+	/* #accueil article #img_news {    
+		width: 80%;
+	} */
 }
