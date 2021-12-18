@@ -1,3 +1,5 @@
+/* Général */
+
 .btn {
 	font-size: 1rem;
 	font-family: monument, sans-serif;
@@ -22,7 +24,9 @@
 	border-color: var(--orange);
 }
 
+
 /* Hover */
+
 .btn.ticket:hover {
 	background-color: var(--blanc);
 	color: var(--noir);

@@ -1,34 +1,39 @@
-/* Gulax */
+/*************** Gulax  ***************/
+
 @font-face {
 	font-family: 'gulax';
-	src: url('../../ressources/fonts/gulax-regular-webfont.woff2') format('woff2'),
-		url('../../ressources/fonts/gulax-regular-webfont.woff') format('woff');
+	src: url('../../ressources/fonts/gulax-regular-webfont.woff2') format('woff2'), url('../../ressources/fonts/gulax-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-/* Lilgrotesk */
+
+/*************** Lilgrotesk  ***************/
+
+/* Bold */
+
 @font-face {
 	font-family: 'lilgroteskbold';
-	src: url('../../ressources/fonts/lilgrotesk-bold-webfont.woff2') format('woff2'),
-		url('../../ressources/fonts/lilgrotesk-bold-webfont.woff') format('woff');
+	src: url('../../ressources/fonts/lilgrotesk-bold-webfont.woff2') format('woff2'), url('../../ressources/fonts/lilgrotesk-bold-webfont.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 }
 
+/* Regular */
+
 @font-face {
 	font-family: 'lilgroteskregular';
-	src: url('../../ressources/fonts/lilgrotesk-regular-webfont.woff2') format('woff2'),
-		url('../../ressources/fonts/lilgrotesk-regular-webfont.woff') format('woff');
+	src: url('../../ressources/fonts/lilgrotesk-regular-webfont.woff2') format('woff2'), url('../../ressources/fonts/lilgrotesk-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
-/* Monument */
+
+/*************** Monument  ***************/
+
 @font-face {
 	font-family: 'monument';
-	src: url('../../ressources/fonts/monumentextended-regular-webfont.woff2') format('woff2'),
-		url('../../ressources/fonts/monumentextended-regular-webfont.woff') format('woff');
+	src: url('../../ressources/fonts/monumentextended-regular-webfont.woff2') format('woff2'), url('../../ressources/fonts/monumentextended-regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }

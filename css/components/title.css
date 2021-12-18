@@ -1,13 +1,26 @@
-/***************  Fonts réactive  ***************/
-p, a, h1, h2, h3, h4, h5, h6 {
+/***************  Fonts réactives  ***************/
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	/* "min" = valeur minimale; "val" = valeur préférée en unité relative; "max" = valeur maximale  */
 	font-size: clamp(var(--min), var(--val), var(--max));
 }
 
+
 /*************** Textes ***************/
-p, a, strong, span {
-	--min: 1rem;  
-	--val: 3.5vw; 
+
+p,
+a,
+strong,
+span {
+	--min: 1rem;
+	--val: 3.5vw;
 	--max: 1.125rem;
 }
 
@@ -15,18 +28,24 @@ strong {
 	font-family: lilgroteskbold, Arial, sans-serif;
 }
 
+
 /*************** Titres ***************/
+
+
 /*** h1 : Logo ***/
+
+
 /*** h2 : Titres ***/
 /* Page d'accueil */
+
 h2 {
 	/* Size */
-	--min: 6vw; 
-	--val: 8vw; 
+	--min: 6vw;
+	--val: 8vw;
 	--max: 10vw;
 	font-family: lilgroteskbold, Arial, sans-serif;
 	line-height: clamp(1rem, 11vw, 6rem);
-	font-weight : bold;
+	font-weight: bold;
 	color: var(--noir);
 	text-transform: uppercase;
 	text-align: center;
@@ -34,8 +53,9 @@ h2 {
 	position: relative;
 }
 
-h2::before, h2::after {
-	content:"";
+h2::before,
+h2::after {
+	content: "";
 	background-image: url('../../ressources/images/outline_star.svg');
 	background-size: clamp(1vw, 2vw, 4vw);
 	width: clamp(1vw, 2vw, 4vw);
@@ -46,7 +66,9 @@ h2::before, h2::after {
 	margin: 0 2vw;
 }
 
+
 /* Pages d'événements/performances */
+
 .header_event h2 {
 	font-family: 'gulax';
 	text-align: left;
@@ -63,11 +85,13 @@ h2::before, h2::after {
 	background-image: url('../../ressources/images/fill_star.svg');
 }
 
+
 /*** h3 & h4 : Sous-titres ***/
+
 h3 {
 	font-family: monument;
-	--min: 2rem; 
-	--val: 2vw; 
+	--min: 2rem;
+	--val: 2vw;
 	--max: 4vw;
 }
 
@@ -76,7 +100,9 @@ h4 {
 	font-size: 17px;
 }
 
+
 /*** h3 & h4 : Sous-titres ***/
+
 h5 {
 	font-size: clamp(3rem, 4vw, 8vw);
 	font-family: lilgroteskbold, Arial, sans-serif;

@@ -1,4 +1,5 @@
 /*************** Général ***************/
+
 footer {
 	color: var(--blanc);
 	text-align: center;
@@ -20,16 +21,21 @@ footer {
 	left: 0;
 }
 
+
 /*************** Titre ***************/
+
 footer h2 {
 	color: var(--blanc);
 }
 
-footer h2::before, footer h2::after {
+footer h2::before,
+footer h2::after {
 	filter: invert(1);
 }
 
+
 /*************** Article ***************/
+
 footer article {
 	text-align: center;
 	position: relative;
@@ -37,17 +43,19 @@ footer article {
 	flex-wrap: wrap;
 }
 
+
 /* Informations de contact */
-footer article:nth-child(2n) {	
+
+footer article:nth-child(2n) {
 	margin-left: auto;
 	margin-right: auto;
-	width: 80%;	
+	width: 80%;
 	align-items: flex-start;
 	justify-content: space-around;
 	padding: 5rem 0;
 }
 
-footer article .social_medias > * {
+footer article .social_medias>* {
 	margin: .5rem;
 }
 
@@ -57,7 +65,9 @@ footer article .social_medias ul {
 	flex-wrap: wrap;
 }
 
+
 /* Mentions d'informations */
+
 footer article:nth-child(3n) ul {
 	margin-left: auto;
 	margin-right: auto;

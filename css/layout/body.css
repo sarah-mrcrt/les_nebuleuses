@@ -1,4 +1,5 @@
 /*************** Document ***************/
+
 * {
 	margin: 0;
 	padding: 0;
@@ -18,8 +19,12 @@ body {
 	overflow-x: hidden;
 }
 
+
 /*************** Éléments de texte ***************/
-a, ul, li {
+
+a,
+ul,
+li {
 	text-decoration: none;
 }
 
@@ -30,7 +35,9 @@ img {
 	vertical-align: middle;
 }
 
+
 /*************** Structure & Habillage ***************/
+
 .container {
 	width: 80%;
 	/* Centrer le containeur sur la page */
@@ -45,25 +52,33 @@ section {
 	padding: 3vw 0;
 }
 
+
 /*************** Barre de défilement ***************/
+
+
 /* Epaisseur scrollbar */
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
 	width: 1.5vw;
 	height: 1.5vw;
 }
 
+
 /* Thumb */
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
 	background: var(--clementine);
 	transition: all 0.5s ease;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
 	background: var(--orange)
 }
 
+
 /* Track */
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
 	background: var(--fond_bg);
 	border: 0.5px solid var(--gris_clair);
 	box-shadow: inset 0 0 0 0 var(--fond_bg);

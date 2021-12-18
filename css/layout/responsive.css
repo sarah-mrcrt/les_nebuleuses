@@ -1,10 +1,12 @@
 /* Contrainte : Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
 
+
 /* 320px - 480px : Appareils mobiles
 481px - 768px : iPads, Tablettes
 769px - 1024px : Petits écrans, ordinateurs portables
 1025px - 1200px : Ordinateurs de bureau, grands écrans
 1201px et plus : Très grands écrans, TV */
+
 
 /* 
 menu burger
@@ -18,101 +20,97 @@ responsive :
 responsive fiche ok
 */
 
+
 /* HEADER {display: none;} */
 
+
 /* Dispositifs très petits (téléphones, 630px et -) */
-@media only screen and (max-width : 630px)  {
+
+@media only screen and (max-width: 630px) {
 	/*************** Accueil  ***************/
 	#accueil {
 		margin: 21vw 0;
 	}
-
 	#accueil article {
 		justify-content: space-between;
 	}
-
 	#accueil #bandeaux img:first-child {
 		top: 40%;
 	}
-
-	#accueil article #img_news {    
+	#accueil article #img_news {
 		width: 80%;
 	}
 }
 
+
 /* Périphériques de taille moyenne (tablettes, 768px et +) */
-@media only screen and (max-width : 768px) {
+
+@media only screen and (max-width: 768px) {
 	aside {
 		display: none;
 	}
-
 	/*************** Menu burger  ***************/
 	#open {
 		display: block;
 		height: 30px;
+		width: 30px;
 	}
-
 	#open i {
-		max-height:100%;
+		max-height: 100%;
 	}
-
 	#close {
 		display: block;
 		position: absolute;
+		height: 30px;
+		width: 30px;
 	}
-
 	header nav {
-		position:fixed;
-		z-index:2;
-		background-color: orange;
-		width:250px;
-		height:100vh;
-		left:0;
-		transform:translateX(-250px);
-		transition:transform 0.25s ease-in-out;
+		position: fixed;
+		z-index: 2;
+		background-color: rgba(0, 0, 0, 0.541);
+		width: 100vw;
+		height: 100vh;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		/* Apparition menu burger */
+		transform: translateY(-100vh);
+		transition: transform 0.25s ease-in-out;
 	}
-
 	header nav ul {
 		height: auto;
 		margin-top: 40px;
 	}
-
-	header nav ul li, header nav ul li a{
+	header nav ul li,
+	header nav ul li a {
 		height: auto;
 	}
-
-
 	/*************** Titres  ***************/
 	h1 {
 		padding: 2rem 0;
 	}
-
 	/*************** Accueil  ***************/
 	#accueil {
 		clip-path: polygon(0 0, 100% 0%, 100% 95%, 0% 100%);
 		padding: 0 0 20vh 0;
 	}
-
 	#accueil article {
 		height: auto;
 	}
-
 	/*************** Agenda  ***************/
 	#agenda {
 		margin: auto;
 	}
-
 	/* Calendrier */
 	#agenda #calendrier {
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
 	}
-
 	#agenda #calendrier #mois p:nth-last-child(-n+2) {
 		display: none;
 	}
-
 	#agenda #calendrier #mois p span {
 		font-size: clamp(.1rem, 3.5vw, 1.125rem);
 		right: -13%;
@@ -120,71 +118,60 @@ responsive fiche ok
 		transform: rotate(-90deg);
 		font-size: 0.6rem;
 	}
-
-	#agenda #calendrier #mois, #agenda #calendrier .arrows {
+	#agenda #calendrier #mois,
+	#agenda #calendrier .arrows {
 		padding: 2rem 0;
 	}
-
 	/* Representation */
 	#agenda #representation article {
 		grid-template-columns: repeat(1, 1fr);
 	}
-
 	#agenda #representation article .date_tarif {
 		display: none;
 	}
-
 	#agenda #representation article .picture div {
 		left: -13%;
 	}
-
 	/*************** Informations pratiques  ***************/
 	#infos_pratiques .grid {
 		width: 100%;
 		column-gap: 0;
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(4, 50vw);
-		grid-template-areas:
-			"restauration."
-			"covid."
-			"billetterie."
-			"transport.";
+		grid-template-areas: "restauration." "covid." "billetterie." "transport.";
 	}
-
 	/*************** Footer  ***************/
 	footer {
 		clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
 		justify-content: space-around;
 	}
-
 	footer h1 {
 		padding: 0;
 	}
-
 	footer img {
 		position: absolute;
 		z-index: -1;
 		right: 0;
 		bottom: 0;
 		width: 23%;
-	} 
-
+	}
 	/* Article */
-	footer article:nth-child(2n), footer article:nth-child(3n) ul{
+	footer article:nth-child(2n),
+	footer article:nth-child(3n) ul {
 		align-items: center;
 		flex-direction: column;
 	}
-
 	footer article:nth-child(2n) {
 		padding: 1.5rem 0;
 	}
-
 	footer img {
 		display: none;
 	}
 }
 
+
 /* Gros appareils (ordinateurs portables/de bureau, 992px et +) */
+
 @media only screen and (max-width: 992px) {
 	/*************** Accueil  ***************/
 	#accueil article {
@@ -192,7 +179,6 @@ responsive fiche ok
 		align-items: center;
 		justify-content: end;
 	}
-
 	/* Bandeaux */
 	/* #accueil #bandeaux img {
 	top: 35%;
@@ -210,35 +196,30 @@ responsive fiche ok
 	left: 2%;
 } */
 	/* Actualités */
-	#accueil article #img_news {    
+	#accueil article #img_news {
 		/* width: 100%; */
 		margin: 2rem 0;
 		height: 100%;
 	}
-
 	/*************** Footer  ***************/
 	footer h1 {
 		padding: 1rem;
 	}
-
 	/*************** Evenements  ***************/
 	/* Entete */
 	.evenements .header_event {
 		flex-direction: column;
 		text-align: center;
 	}
-
 	.evenements .header_event .picture {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
-
 	.evenements .header_event .picture .polygone {
 		right: 2%;
 		top: 2%;
 	}
-
 	.evenements .header_event .rectangle {
 		background-color: var(--gris_clair);
 		height: 56vw;
@@ -246,60 +227,56 @@ responsive fiche ok
 		left: -2%;
 		transform: rotate(355deg) scale(1.2);
 	}
-	
-	.evenements .header_event .picture, .evenements .header_event .titre {
+	.evenements .header_event .picture,
+	.evenements .header_event .titre {
 		align-items: center;
 		width: 100%;
 		padding: 0;
 	}
-
 	.evenements .header_event .titre h2 {
 		text-align: center;
 		font-size: 3rem;
 		line-height: 3rem;
 		padding: 0;
 	}
-
-	.evenements .header_event h2::after,.header_event  h2::before {
+	.evenements .header_event h2::after,
+	.header_event h2::before {
 		display: inline-block;
 		background-image: url('../../ressources/images/fill_star.svg');
 	}
-
 	.evenements .header_event .boutons {
 		margin: 3rem 0;
 	}
-
 	/* Contenu éditorial  */
 	.evenements .editor_event article {
 		width: 100%;
 		text-align: center;
 	}
-
 	.evenements .editor_event .en_details .date_tarif {
 		width: 16rem;
-    	height: 12rem;
+		height: 12rem;
 	}
 }
 
+
 /* IPAD PRO */
-@media only screen and (max-width: 1000px)  {
+
+@media only screen and (max-width: 1000px) {
 	#agenda #calendrier #mois p span {
 		right: -10%;
 		bottom: 79%;
 	}
-		/*************** Agenda ***************/
+	/*************** Agenda ***************/
 	/* #agenda #representation article {
 	grid-gap: 1vw;
 	grid-template-columns: 1fr 1fr 0fr 0fr;
 } */
-
 	/*************** Accueil  ***************/
 	/* #accueil article {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 } */
-
 	/* Bandeaux */
 	/* #accueil #bandeaux img {
 	top: 21%;

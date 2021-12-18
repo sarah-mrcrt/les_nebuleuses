@@ -1,4 +1,5 @@
 /*************** Menu ordinateur ***************/
+
 header {
 	position: fixed;
 	top: 0;
@@ -43,19 +44,24 @@ header ul li a {
 	color: var(--gris_clair);
 }
 
+
 /*************** Menu burger ***************/
+
 header button {
 	color: var(--blanc);
 	border: none;
 	background-color: transparent;
 }
-#open,  #close {
+
+#open,
+#close {
 	display: none;
 	font-size: 2em;
 	margin: 0 2rem;
 }
 
 header nav.open {
-	transform:translateX(0px);
+	transform: translateY(0);
 }
+
 /* https://codepen.io/bee-3/pen/OJjVgvN */

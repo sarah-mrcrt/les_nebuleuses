@@ -1,4 +1,5 @@
 /*************** Général ***************/
+
 #agenda {
 	margin-top: -6rem;
 }
@@ -14,19 +15,23 @@
 	text-align: center;
 	position: relative;
 	display: grid;
-	grid-template-columns:  repeat(4,1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 4vw;
 }
 
-#agenda #representation article >*  {
+#agenda #representation article>* {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
 
+
 /*************** Calendrier ***************/
+
+
 /* Mois */
+
 #agenda #calendrier #mois {
 	padding: 2rem 3rem;
 	justify-content: space-between;
@@ -37,7 +42,7 @@
 	position: relative;
 }
 
-#agenda #calendrier #mois > p {
+#agenda #calendrier #mois>p {
 	font-size: clamp(2rem, 8vw, 10rem);
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
@@ -45,7 +50,7 @@
 	color: transparent;
 }
 
-#agenda #calendrier #mois > p.active {
+#agenda #calendrier #mois>p.active {
 	-webkit-text-stroke-color: var(--noir);
 }
 
@@ -64,7 +69,9 @@
 	color: var(--noir);
 }
 
+
 /* Flèches */
+
 .arrows {
 	padding: 3rem 4.5rem;
 	font-family: monument;
@@ -80,7 +87,7 @@
 }
 
 .arrows svg {
-	width: clamp(18vw,20vw,30vw);
+	width: clamp(18vw, 20vw, 30vw);
 }
 
 .left_arrow {
@@ -88,16 +95,24 @@
 	transform: scaleX(-1);
 }
 
+
 /*************** Représentation ***************/
+
+
 /*** Image ***/
+
+
 /* Image générale */
+
 #agenda #representation article .picture img {
 	/* Adapter les images aux grilles */
 	min-width: 100%;
 	min-height: 100%;
 }
 
+
 /* Type de la performance dans un polygone */
+
 #agenda #representation article .picture div {
 	left: -3%;
 	top: -3vw;
@@ -119,13 +134,15 @@
 	position: absolute;
 	z-index: 1;
 	/* 50 % du parent référent */
-	top: 50%; 
-	left: 50%; 
+	top: 50%;
+	left: 50%;
 	/* décalage de 50% de sa propre taille */
-	transform: translate(-50%, -50%); 
+	transform: translate(-50%, -50%);
 }
 
-/*** Dates & Tarifs (COMMUN AUX PAGES D'ÉVÉNEMENTS) ***/ 
+
+/*** Dates & Tarifs (COMMUN AUX PAGES D'ÉVÉNEMENTS) ***/
+
 .date_tarif span {
 	position: relative;
 	padding: 1rem;
@@ -145,8 +162,10 @@
 	margin: 0 auto;
 }
 
-/*** Informations ***/ 
-#agenda #representation article .infos_performance span  {
+
+/*** Informations ***/
+
+#agenda #representation article .infos_performance span {
 	font-size: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
@@ -156,7 +175,9 @@
 	padding: 1rem;
 }
 
-/*** Boutons ***/ 
-#agenda #representation article .boutons  a {
+
+/*** Boutons ***/
+
+#agenda #representation article .boutons a {
 	margin: .5rem 0;
 }
