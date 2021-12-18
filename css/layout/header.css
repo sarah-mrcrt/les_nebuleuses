@@ -14,24 +14,28 @@ header {
 	backdrop-filter: blur(20px);
 	-webkit-backdrop-filter: blur(20px);
 	border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-header nav {
+	/* Flex */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 
-header svg  {
-	width: 75%;
+header svg {
+	/* width: 30%; */
 	text-align: left;
+	background-color: blue;
+}
+
+header nav {
+	/* width: 50%; */
+	background-color: red;
 }
 
 header ul {
-	width: 65%;
+	/* width: 65%; 	*/
 	font-family: monument;
 	display: flex;
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-around;
 }
 
@@ -45,13 +49,13 @@ header button {
 	border: none;
 	background-color: transparent;
 }
-#open,  #close{
-	display:none;
+#open,  #close {
+	display: none;
 	font-size: 2em;
 	margin: 0 2rem;
 }
 
-header nav.open{
+header nav.open {
 	transform:translateX(0px);
 }
 /* https://codepen.io/bee-3/pen/OJjVgvN */

@@ -1,30 +1,44 @@
-/* Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
+/* Contrainte : Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
 
-/* 320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV */
+/* 320px - 480px : Appareils mobiles
+481px - 768px : iPads, Tablettes
+769px - 1024px : Petits écrans, ordinateurs portables
+1025px - 1200px : Ordinateurs de bureau, grands écrans
+1201px et plus : Très grands écrans, TV */
 
 /* 
 menu burger
-responsive : accueil
-Calendrier : fleches + mois
+responsive : 
+- ipad : accueil, date agenda
+- ipad pro : accueil 
+- Calendrier : fleches + mois
+- font size txt hover
 => Tailles aux images de l'agenda + soulignement
+
+responsive fiche ok
 */
 
-/* Dispositifs très petits (téléphones, 630px et -) */
-@media only screen and (max-width : 630px)   {
-	#accueil {
-		margin: 21vw 0;}
-}
+/* HEADER {display: none;} */
+
 /* Dispositifs très petits (téléphones, 630px et -) */
 @media only screen and (max-width : 630px)  {
+	/*************** Accueil  ***************/
+	#accueil {
+		margin: 21vw 0;
+	}
+
+	#accueil article {
+		justify-content: space-between;
+	}
+
 	#accueil #bandeaux img:first-child {
 		top: 40%;
 	}
-}
 
+	#accueil article #img_news {    
+		width: 80%;
+	}
+}
 
 /* Périphériques de taille moyenne (tablettes, 768px et +) */
 @media only screen and (max-width : 768px) {
@@ -38,16 +52,16 @@ Calendrier : fleches + mois
 		height: 30px;
 	}
 
-	#open i{
+	#open i {
 		max-height:100%;
 	}
 
-	#close{
+	#close {
 		display: block;
 		position: absolute;
 	}
 
-	header nav{
+	header nav {
 		position:fixed;
 		z-index:2;
 		background-color: orange;
@@ -79,6 +93,10 @@ Calendrier : fleches + mois
 		padding: 0 0 20vh 0;
 	}
 
+	#accueil article {
+		height: auto;
+	}
+
 	/*************** Agenda  ***************/
 	#agenda {
 		margin: auto;
@@ -104,7 +122,7 @@ Calendrier : fleches + mois
 	}
 
 	#agenda #calendrier #mois, #agenda #calendrier .arrows {
-		padding: 0;
+		padding: 2rem 0;
 	}
 
 	/* Representation */
@@ -112,7 +130,7 @@ Calendrier : fleches + mois
 		grid-template-columns: repeat(1, 1fr);
 	}
 
-	#agenda #representation article .date_tarif{
+	#agenda #representation article .date_tarif {
 		display: none;
 	}
 
@@ -121,7 +139,7 @@ Calendrier : fleches + mois
 	}
 
 	/*************** Informations pratiques  ***************/
-	#infos_pratiques .grid  {
+	#infos_pratiques .grid {
 		width: 100%;
 		column-gap: 0;
 		grid-template-columns: repeat(1, 1fr);
@@ -164,8 +182,6 @@ Calendrier : fleches + mois
 	footer img {
 		display: none;
 	}
-
-	
 }
 
 /* Gros appareils (ordinateurs portables/de bureau, 992px et +) */
@@ -179,32 +195,26 @@ Calendrier : fleches + mois
 
 	/* Bandeaux */
 	/* #accueil #bandeaux img {
-		top: 35%;
-		transform: scale(1.5);
-	}
+	top: 35%;
+	transform: scale(1.5);
+}
 	#accueil #bandeaux img:first-child {
-		top: 20%;
-		transform: scale(1.5);
-	}
+	top: 20%;
+	transform: scale(1.5);
+}
 	#accueil #bandeaux .rectangle {
-		bottom: 21%;
-		width: 100vw;
-		height: 30vh;
-		top: 40%;
-		left: 2%;
-	} */
+	bottom: 21%;
+	width: 100vw;
+	height: 30vh;
+	top: 40%;
+	left: 2%;
+} */
 	/* Actualités */
 	#accueil article #img_news {    
-		width: 80%;
+		/* width: 100%; */
 		margin: 2rem 0;
 		height: 100%;
 	}
-
-	/*************** Agenda ***************/
-	/* #agenda #representation article {
-	grid-gap: 1vw;
-	grid-template-columns: 1fr 1fr 0fr 0fr;
-} */
 
 	/*************** Footer  ***************/
 	footer h1 {
@@ -236,19 +246,14 @@ Calendrier : fleches + mois
 		left: -2%;
 		transform: rotate(355deg) scale(1.2);
 	}
-
-	/* Contenu éditorial  */
-	.evenements .editor_event article {
-		width: 100%;
-	}
-
+	
 	.evenements .header_event .picture, .evenements .header_event .titre {
 		align-items: center;
 		width: 100%;
 		padding: 0;
 	}
 
-	.evenements .header_event .titre h2{
+	.evenements .header_event .titre h2 {
 		text-align: center;
 		font-size: 3rem;
 		line-height: 3rem;
@@ -263,10 +268,31 @@ Calendrier : fleches + mois
 	.evenements .header_event .boutons {
 		margin: 3rem 0;
 	}
+
+	/* Contenu éditorial  */
+	.evenements .editor_event article {
+		width: 100%;
+		text-align: center;
+	}
+
+	.evenements .editor_event .en_details .date_tarif {
+		width: 16rem;
+    	height: 12rem;
+	}
 }
 
 /* IPAD PRO */
-@media only screen and (max-width: 1024px) and (min-height: 1300px) {
+@media only screen and (max-width: 1000px)  {
+	#agenda #calendrier #mois p span {
+		right: -10%;
+		bottom: 79%;
+	}
+		/*************** Agenda ***************/
+	/* #agenda #representation article {
+	grid-gap: 1vw;
+	grid-template-columns: 1fr 1fr 0fr 0fr;
+} */
+
 	/*************** Accueil  ***************/
 	/* #accueil article {
 	flex-direction: column;
@@ -293,6 +319,6 @@ Calendrier : fleches + mois
 } */
 	/* Actualités */
 	/* #accueil article #img_news {    
-		width: 80%;
-	} */
+	width: 80%;
+} */
 }
