@@ -5,8 +5,7 @@ header {
 	top: 0;
 	z-index: 10;
 	text-align: center;
-	max-width: 100%;
-	width: 100%;
+	min-width: 100%;
 	padding: 1rem 0;
 	/* Glassmorphism */
 	background: rgba(255, 255, 255, 0.05);
@@ -21,27 +20,26 @@ header {
 	justify-content: space-between;
 }
 
+/* Logo */
 header svg {
-	/* width: 30%; */
-	text-align: left;
-	background-color: blue;
+	width: 75%;
 }
 
+/* Menu */
 header nav {
-	/* width: 50%; */
-	background-color: red;
+		width: 65%; 	
 }
 
 header ul {
-	/* width: 65%; 	*/
 	font-family: monument;
 	display: flex;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
 	justify-content: space-around;
 }
 
 header ul li a {
 	color: var(--gris_clair);
+	margin: 0 .5rem;
 }
 
 
@@ -58,6 +56,8 @@ header button {
 	display: none;
 	font-size: 2em;
 	margin: 0 2rem;
+	height: 30px;
+	width: 30px;
 }
 
 header nav.open {

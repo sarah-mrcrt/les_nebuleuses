@@ -28,7 +28,7 @@ li {
 	text-decoration: none;
 }
 
-img {
+img, svg {
 	object-fit: cover;
 	max-width: 100%;
 	height: auto;
