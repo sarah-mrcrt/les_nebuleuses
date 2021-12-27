@@ -1,18 +1,19 @@
 /* Contrainte : Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
 
+
 /* Dispositifs très petits (Appareils mobiles, 630px et -) */
 
 @media only screen and (max-width: 630px) {
 	/*************** Accueil  ***************/
 	#accueil {
-		margin: 21vw 0;
+		margin: 15vw 0;
 	}
 	#accueil article {
 		justify-content: space-between;
 	}
 	/* Bandeaux */
-	#accueil #bandeaux .rectangle {
-		top: 88vw;
+	#accueil #bandeaux img:first-child {
+		top: 55vw !important;
 	}
 	/* Actualités */
 	#accueil article #img_news {
@@ -22,44 +23,12 @@
 	#agenda #representation article .picture .image_rectangle {
 		height: 45vw;
 	}
-	/*************** Infos pratique  ***************/
+	/*************** Infos pratiques  ***************/
 	#infos_pratiques .grid article h3 {
 		padding: 1rem;
 	}
 }
 
-/* Mises en page générales de l'iPad */
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
-/*************** Accueil  ***************/
-#accueil {
-		margin: 21vw 0;
-	}
-	#accueil article {
-		flex-direction: column;
-		align-items: center;
-		justify-content: end;
-	}
-	/* Bandeaux */
-	#accueil #bandeaux img:first-child {
-		top: 20vw;
-		transform: scale(2) rotate(-7deg);
-	}
-	#accueil #bandeaux img:nth-child(2n) {
-		display: none;
-	}
-	#accueil #bandeaux .rectangle {
-		z-index: -1;
-		top: 37%;
-		width: 100vw;
-		height: 30vh;
-		transform: scale(1.1) rotate(-7deg);
-	}
-	/* Actualités */
-	#accueil article #img_news {
-		margin: 2rem 0;
-		width: 100%;
-	}
-}
 
 /* Petit écran (tablettes, 768px et +) */
 
@@ -219,7 +188,7 @@
 		z-index: -1;
 		top: 37%;
 		width: 100vw;
-		height: 30vh;
+		height: 35vh;
 		transform: scale(1.1) rotate(-7deg);
 	}
 	/* Actualités */
@@ -286,9 +255,46 @@
 
 
 /* Grands écrans */
+
 @media only screen and (max-width: 1000px) {
 	#agenda #calendrier #mois p span {
 		right: -10%;
 		bottom: 79%;
+	}
+}
+
+
+/* Mises en page générales de l'iPad au format portrait */
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+	/*************** Accueil  ***************/
+	#accueil article {
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+	}
+	/* Bandeaux */
+	#accueil #bandeaux img:first-child {
+		top: 20vw;
+		transform: scale(2) rotate(-7deg);
+	}
+	#accueil #bandeaux img:nth-child(2n) {
+		display: none;
+	}
+	#accueil #bandeaux .rectangle {
+		z-index: -1;
+		top: 50%;
+		width: 100vw;
+		height: 30vh;
+		transform: scale(1.1) rotate(-7deg);
+	}
+	/* Actualités */
+	#accueil article #img_news {
+		margin: 2rem 0;
+		width: 100%;
+	}
+	/*************** Infos pratiques  ***************/
+	#infos_pratiques .grid {
+		width: 100%;
 	}
 }
