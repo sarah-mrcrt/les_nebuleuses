@@ -213,7 +213,7 @@
 	}
 	.evenements .header_event .picture .polygone {
 		right: 2%;
-		top: 2%;
+		top: 10%;
 	}
 	.evenements .header_event .rectangle {
 		background-color: var(--gris_clair);
