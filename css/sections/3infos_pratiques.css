@@ -14,7 +14,7 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(3, .5fr);
 	grid-gap: 1rem;
-	/*marges entre lignes et colonnes */
+	/* Marges entre lignes et colonnes */
 	grid-auto-flow: row dense;
 	grid-template-areas: "restauration covid ." "restauration billetterie ." "transport transport .";
 }
@@ -60,7 +60,6 @@
 	bottom: 0;
 	padding: 2rem;
 	font-family: lilgroteskbold, Arial, sans-serif;
-	font-size: 2rem;
 	color: var(--blanc);
 }
 

@@ -21,7 +21,6 @@
 
 #agenda #representation article>* {
 	display: flex;
-	align-items: center;
 	flex-direction: column;
 	justify-content: center;
 }
@@ -86,8 +85,13 @@
 	flex-direction: column;
 }
 
+.arrows div:hover, .arrows svg:hover {
+	/* Filtre pour modifier la couleur du svg */
+	filter: invert(56%) sepia(54%) saturate(2518%) hue-rotate(355deg) brightness(103%) contrast(103%);
+}
+
 .arrows svg {
-	width: clamp(18vw, 20vw, 30vw);
+	width: clamp(3rem, 8vw, 5rem);
 }
 
 .left_arrow {
@@ -110,6 +114,9 @@
 	min-height: 100%;
 }
 
+#agenda #representation article .picture .image_rectangle {
+	height: 9vw;
+}
 
 /* Type de la performance dans un polygone */
 

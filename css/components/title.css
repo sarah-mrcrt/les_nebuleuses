@@ -90,7 +90,7 @@ h2::after {
 
 h3 {
 	font-family: monument;
-	--min: 2rem;
+	--min: 1.5rem;
 	--val: 2vw;
 	--max: 4vw;
 }
@@ -108,5 +108,5 @@ h5 {
 	font-family: lilgroteskbold, Arial, sans-serif;
 	-webkit-text-stroke: 0.1rem;
 	-webkit-text-stroke-color: var(--gris_clair);
-	color: var(--orange);
+	color: transparent;
 }

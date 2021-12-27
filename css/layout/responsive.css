@@ -8,14 +8,7 @@
 1201px et plus : Très grands écrans, TV */
 
 
-/* 
-responsive : 
-- ipad : accueil, date agenda
-- ipad pro : accueil 
-- Calendrier : fleches + mois
-- font size txt hover
-=> Tailles aux images de l'agenda + soulignement
-*/
+/* section accueil IPAD*/
 
 /* Dispositifs très petits (téléphones, 630px et -) */
 
@@ -27,11 +20,21 @@ responsive :
 	#accueil article {
 		justify-content: space-between;
 	}
-	#accueil #bandeaux img:first-child {
-		top: 40%;
-	}
+	/* Bandeaux */
+	#accueil #bandeaux .rectangle {
+	    top: 88vw;
+}
+/* Actualités */
 	#accueil article #img_news {
 		width: 80%;
+	}
+	/*************** Agenda  ***************/
+	#agenda #representation article .picture .image_rectangle {
+		height: 45vw;
+	}
+	/*************** Infos pratique  ***************/
+	#infos_pratiques .grid article h3 {
+		padding: 1rem;
 	}
 }
 
@@ -46,9 +49,6 @@ responsive :
 	/* Btn */
 	#open {
 		display: block;
-	}
-	#open i {
-		max-height: 100%;
 	}
 	#close {
 		display: block;
@@ -80,6 +80,7 @@ responsive :
 		justify-content: center;
 		align-content: center;
 		height: 100vh;
+		transition: transform 1s ease-in-out;
 	}
 	header nav ul li,
 	header nav ul li a {
@@ -125,11 +126,17 @@ responsive :
 	#agenda #representation article {
 		grid-template-columns: repeat(1, 1fr);
 	}
+	#agenda #representation article>* {
+		align-items: center;
+	}
 	#agenda #representation article .date_tarif {
 		display: none;
 	}
 	#agenda #representation article .picture div {
 		left: -13%;
+	}
+	#agenda #representation article .picture .image_rectangle {
+		height: 40vw;
 	}
 	/*************** Informations pratiques  ***************/
 	#infos_pratiques .grid {
@@ -179,24 +186,22 @@ responsive :
 		justify-content: end;
 	}
 	/* Bandeaux */
-	/* #accueil #bandeaux img {
-	top: 35%;
-	transform: scale(1.5);
-}
 	#accueil #bandeaux img:first-child {
-	top: 20%;
-	transform: scale(1.5);
-}
+		top: 20vw;
+		transform: scale(2) rotate(-7deg);
+	}
+	#accueil #bandeaux img:nth-child(2n) {
+		display: none;
+	}
 	#accueil #bandeaux .rectangle {
-	bottom: 21%;
-	width: 100vw;
-	height: 30vh;
-	top: 40%;
-	left: 2%;
-} */
+		z-index: -1;
+		top: 37%;
+		width: 100vw;
+		height: 30vh;
+		transform: scale(1.1) rotate(-7deg);
+	}
 	/* Actualités */
 	#accueil article #img_news {
-		/* width: 100%; */
 		margin: 2rem 0;
 		height: 100%;
 	}
@@ -259,42 +264,9 @@ responsive :
 
 
 /* IPAD PRO */
-
 @media only screen and (max-width: 1000px) {
 	#agenda #calendrier #mois p span {
 		right: -10%;
 		bottom: 79%;
 	}
-	/*************** Agenda ***************/
-	/* #agenda #representation article {
-	grid-gap: 1vw;
-	grid-template-columns: 1fr 1fr 0fr 0fr;
-} */
-	/*************** Accueil  ***************/
-	/* #accueil article {
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-} */
-	/* Bandeaux */
-	/* #accueil #bandeaux img {
-	top: 21%;
-}
-	#accueil #bandeaux img:first-child {
-	top: 33%;
-}
-	#accueil #img_news{
-	width: 67%;
-	margin: 2rem;
-	height: auto;
-}
-	#accueil #bandeaux .rectangle {
-	bottom: 21%;
-	width: 100vw;
-	height: 45vh;
-} */
-	/* Actualités */
-	/* #accueil article #img_news {    
-	width: 80%;
-} */
 }
