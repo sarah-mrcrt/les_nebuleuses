@@ -1,16 +1,6 @@
 /* Contrainte : Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
 
-
-/* 320px - 480px : Appareils mobiles
-481px - 768px : iPads, Tablettes
-769px - 1024px : Petits écrans, ordinateurs portables
-1025px - 1200px : Ordinateurs de bureau, grands écrans
-1201px et plus : Très grands écrans, TV */
-
-
-/* section accueil IPAD*/
-
-/* Dispositifs très petits (téléphones, 630px et -) */
+/* Dispositifs très petits (Appareils mobiles, 630px et -) */
 
 @media only screen and (max-width: 630px) {
 	/*************** Accueil  ***************/
@@ -22,9 +12,9 @@
 	}
 	/* Bandeaux */
 	#accueil #bandeaux .rectangle {
-	    top: 88vw;
-}
-/* Actualités */
+		top: 88vw;
+	}
+	/* Actualités */
 	#accueil article #img_news {
 		width: 80%;
 	}
@@ -38,8 +28,40 @@
 	}
 }
 
+/* Mises en page générales de l'iPad */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+/*************** Accueil  ***************/
+#accueil {
+		margin: 21vw 0;
+	}
+	#accueil article {
+		flex-direction: column;
+		align-items: center;
+		justify-content: end;
+	}
+	/* Bandeaux */
+	#accueil #bandeaux img:first-child {
+		top: 20vw;
+		transform: scale(2) rotate(-7deg);
+	}
+	#accueil #bandeaux img:nth-child(2n) {
+		display: none;
+	}
+	#accueil #bandeaux .rectangle {
+		z-index: -1;
+		top: 37%;
+		width: 100vw;
+		height: 30vh;
+		transform: scale(1.1) rotate(-7deg);
+	}
+	/* Actualités */
+	#accueil article #img_news {
+		margin: 2rem 0;
+		width: 100%;
+	}
+}
 
-/* Périphériques de taille moyenne (tablettes, 768px et +) */
+/* Petit écran (tablettes, 768px et +) */
 
 @media only screen and (max-width: 768px) {
 	aside {
@@ -54,7 +76,7 @@
 		display: block;
 		position: absolute;
 		right: 1.5%;
-    	top: 4%;
+		top: 4%;
 	}
 	/* Logo */
 	header svg {
@@ -176,7 +198,7 @@
 }
 
 
-/* Gros appareils (ordinateurs portables/de bureau, 992px et +) */
+/* Moyens écrans, ordinateurs portables */
 
 @media only screen and (max-width: 992px) {
 	/*************** Accueil  ***************/
@@ -263,7 +285,7 @@
 }
 
 
-/* IPAD PRO */
+/* Grands écrans */
 @media only screen and (max-width: 1000px) {
 	#agenda #calendrier #mois p span {
 		right: -10%;
