@@ -1,36 +1,112 @@
 /* Contrainte : Le site doit être responsive jusqu'à une résolution de 320px de large (type iphone 5/SE). */
 
 
-/* Dispositifs très petits (Appareils mobiles, 630px et -) */
+/****************************** Grands écrans ******************************/
 
-@media only screen and (max-width: 630px) {
-	/*************** Accueil  ***************/
-	#accueil {
-		margin: 15vw 0;
-	}
-	#accueil article {
-		justify-content: space-between;
-	}
-	/* Bandeaux */
-	#accueil #bandeaux img:first-child {
-		top: 55vw !important;
-	}
-	/* Actualités */
-	#accueil article #img_news {
-		width: 80%;
-	}
-	/*************** Agenda  ***************/
-	#agenda #representation article .picture .image_rectangle {
-		height: 45vw;
-	}
-	/*************** Infos pratiques  ***************/
-	#infos_pratiques .grid article h3 {
-		padding: 1rem;
+@media only screen and (max-width: 1000px) {
+	#agenda #calendrier #mois p span {
+		right: -10%;
+		bottom: 79%;
 	}
 }
 
 
-/* Petit écran (tablettes, 768px et +) */
+/****************************** Moyens écrans, ordinateurs portables ******************************/
+
+@media only screen and (max-width: 992px) {
+	/*************** Accueil  ***************/
+	#accueil,
+	#accueil article {
+		display: flex;
+		flex-direction: column;
+	}
+	#accueil {
+		justify-content: center;
+	}
+	#accueil article {
+		justify-content: end;
+		align-items: center;
+	}
+	/* Bandeaux */
+	#accueil #bandeaux img:first-child {
+		z-index: 0;
+		top: 20vw;
+		transform: scale(2) rotate(-7deg);
+	}
+	#accueil #bandeaux img:nth-child(2n) {
+		display: none;
+	}
+	#accueil #bandeaux .rectangle {
+		z-index: -1;
+		top: 45%;
+		width: 100vw;
+		height: 35vh;
+		transform: scale(1.1) rotate(-7deg);
+	}
+	/* Actualités */
+	#accueil article #img_news {
+		margin: 2rem 0;
+		height: 100%;
+	}
+	/*************** Footer  ***************/
+	footer h2 {
+		padding: 1rem;
+	}
+	/*************** Evenements  ***************/
+	/* Entete */
+	.evenements .header_event {
+		flex-direction: column;
+		text-align: center;
+	}
+	.evenements .header_event .picture {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.evenements .header_event .picture .polygone {
+		right: 2%;
+		top: 10%;
+	}
+	.evenements .header_event .rectangle {
+		background-color: var(--gris_clair);
+		height: 56vw;
+		top: 27%;
+		left: -2%;
+		transform: rotate(355deg) scale(1.2);
+	}
+	.evenements .header_event .picture,
+	.evenements .header_event .titre {
+		align-items: center;
+		width: 100%;
+		padding: 0;
+	}
+	.evenements .header_event .titre h2 {
+		text-align: center;
+		font-size: 3rem;
+		line-height: 3rem;
+		padding: 0;
+	}
+	.evenements .header_event h2::after,
+	.header_event h2::before {
+		display: inline-block;
+		background-image: url('../../ressources/images/fill_star.svg');
+	}
+	.evenements .header_event .boutons {
+		margin: 3rem 0;
+	}
+	/* Contenu éditorial  */
+	.evenements .editor_event article {
+		width: 100%;
+		text-align: center;
+	}
+	.evenements .editor_event .en_details .date_tarif {
+		width: 16rem;
+		height: 12rem;
+	}
+}
+
+
+/****************************** Petit écran (tablettes, 768px et +) ******************************/
 
 @media only screen and (max-width: 768px) {
 	aside {
@@ -167,104 +243,37 @@
 }
 
 
-/* Moyens écrans, ordinateurs portables */
+/****************************** Dispositifs très petits (Appareils mobiles, 630px et -) ******************************/
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 630px) {
 	/*************** Accueil  ***************/
+	#accueil {
+		margin: 10vw 0;
+		padding: 0;
+	}
 	#accueil article {
-		flex-direction: column;
-		align-items: center;
-		justify-content: end;
+		justify-content: space-between;
 	}
 	/* Bandeaux */
 	#accueil #bandeaux img:first-child {
-		top: 20vw;
-		transform: scale(2) rotate(-7deg);
-	}
-	#accueil #bandeaux img:nth-child(2n) {
-		display: none;
-	}
-	#accueil #bandeaux .rectangle {
-		z-index: -1;
-		top: 37%;
-		width: 100vw;
-		height: 35vh;
-		transform: scale(1.1) rotate(-7deg);
+		top: 55vw;
 	}
 	/* Actualités */
 	#accueil article #img_news {
-		margin: 2rem 0;
-		height: 100%;
+		width: 80%;
 	}
-	/*************** Footer  ***************/
-	footer h2 {
+	/*************** Agenda  ***************/
+	#agenda #representation article .picture .image_rectangle {
+		height: 45vw;
+	}
+	/*************** Infos pratiques  ***************/
+	#infos_pratiques .grid article h3 {
 		padding: 1rem;
 	}
-	/*************** Evenements  ***************/
-	/* Entete */
-	.evenements .header_event {
-		flex-direction: column;
-		text-align: center;
-	}
-	.evenements .header_event .picture {
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.evenements .header_event .picture .polygone {
-		right: 2%;
-		top: 10%;
-	}
-	.evenements .header_event .rectangle {
-		background-color: var(--gris_clair);
-		height: 56vw;
-		top: 27%;
-		left: -2%;
-		transform: rotate(355deg) scale(1.2);
-	}
-	.evenements .header_event .picture,
-	.evenements .header_event .titre {
-		align-items: center;
-		width: 100%;
-		padding: 0;
-	}
-	.evenements .header_event .titre h2 {
-		text-align: center;
-		font-size: 3rem;
-		line-height: 3rem;
-		padding: 0;
-	}
-	.evenements .header_event h2::after,
-	.header_event h2::before {
-		display: inline-block;
-		background-image: url('../../ressources/images/fill_star.svg');
-	}
-	.evenements .header_event .boutons {
-		margin: 3rem 0;
-	}
-	/* Contenu éditorial  */
-	.evenements .editor_event article {
-		width: 100%;
-		text-align: center;
-	}
-	.evenements .editor_event .en_details .date_tarif {
-		width: 16rem;
-		height: 12rem;
-	}
 }
 
 
-/* Grands écrans */
-
-@media only screen and (max-width: 1000px) {
-	#agenda #calendrier #mois p span {
-		right: -10%;
-		bottom: 79%;
-	}
-}
-
-
-/* Mises en page générales de l'iPad au format portrait */
+/****************************** Mises en page générales de l'iPad au format portrait /******************************/
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
 	/*************** Accueil  ***************/
@@ -283,7 +292,7 @@
 	}
 	#accueil #bandeaux .rectangle {
 		z-index: -1;
-		top: 50%;
+		top: 52%;
 		width: 100vw;
 		height: 30vh;
 		transform: scale(1.1) rotate(-7deg);
